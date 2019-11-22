@@ -14,3 +14,4 @@
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./array/442.findDuplicates.go)|M|
 |0509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[go](./array/509.fibnacci.go)|S|
 |0617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|[go](./tree/617.mergeTrees.go)|S|
+|1213|[三个有序数组的交集](https://leetcode-cn.com/problems/intersection-of-three-sorted-arrays/)|[go](./array/1213.arraysIntersection.go)|S|
