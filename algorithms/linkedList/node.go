@@ -21,7 +21,7 @@ func (l *List) Dump() {
 		fmt.Printf("Data:%v Next:%v Ptr:%v\n", cur.Data, cur.Next, *cur)
 		cur = cur.Next
 	}
-	fmt.Println("*************\n")
+	fmt.Println("*************")
 }
 
 // 链表长度
