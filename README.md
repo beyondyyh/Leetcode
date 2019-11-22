@@ -2,3 +2,4 @@
 | Type | 
 |------|
 |[Algorithms](./algorithms)|
+|[Shell](./shell)|
