@@ -1,5 +1,6 @@
 # Leetcode
-| Type | 
+
+| Type |
 |------|
 |[Algorithms](./algorithms)|
 |[Shell](./shell)|

@@ -6,7 +6,7 @@ import (
 
 /**
  * 构造结果
- *	when step = 0:
+ *	when step = 1:
  *					1
  *				2			5
  *			3		4	6		7
