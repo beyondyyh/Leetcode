@@ -1,4 +1,5 @@
 # Algorithms
+
 | No. | Title | Go | Difficulty |
 |-----| ----- | -- | ---------- |
 |0001|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[go](./string/1.twoSum.go)|S|
@@ -12,3 +13,4 @@
 |0344|[反转字符串](https://leetcode-cn.com/problems/reverse-string/)|[go](./string/344.reverseString.go)|S|
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./array/442.findDuplicates.go)|M|
 |0509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[go](./array/509.fibnacci.go)|S|
+|0617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|[go](./tree/617.mergeTrees.go)|S|
