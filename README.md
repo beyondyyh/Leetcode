@@ -1,3 +1,5 @@
 # Leetcode
 Play Leetcode with Go Programming
-HHH
+| Type | 
+|------|
+|[Algorithms](./algorithms)|

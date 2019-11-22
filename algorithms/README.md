@@ -1,4 +1,4 @@
-# Leetcode
+# Algorithms 
 | No. | Title | Go | Difficulty |
 |-----| ----- | -- | ---------- |
 |0003|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[go](./string/3.lengthOfLongestSubstring.go)|M| 
