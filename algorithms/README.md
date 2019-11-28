@@ -2,10 +2,11 @@
 
 | No. | Title | Go | Difficulty |
 |-----| ----- | -- | ---------- |
-|0001|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[go](./string/1.twoSum.go)|S|
+|0001|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[go](./array/1.twoSum.go)|S|
 |0002|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[go](./linkedList/2.addTwoNumbers.go)|M|
 |0003|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[go](./string/3.lengthOfLongestSubstring.go)|M|
 |0014|[最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)|[go](./string/14.longestCommonPrefix.go)|S|
+|0015|[三数之和](https://leetcode-cn.com/problems/3sum/submissions/)|[go](./array/15.threeSum.go)|M|
 |0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|[go](./string/20.isValid.go)|S|
 |0053|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[go](./array/53.maxSubArray.go)|S|
 |0118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[go](./array/118.generate.go)|S|
