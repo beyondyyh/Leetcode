@@ -7,6 +7,10 @@ type ListNode struct {
 	Next *ListNode
 }
 
+func newListNode(val int) *ListNode {
+	return &ListNode{Val: val}
+}
+
 func insert(val int, head *ListNode) *ListNode {
 	var node *ListNode = &ListNode{Val: val}
 	node.Next = head
