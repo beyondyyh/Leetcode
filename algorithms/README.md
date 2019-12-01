@@ -9,6 +9,7 @@
 |0015|[三数之和](https://leetcode-cn.com/problems/3sum/submissions/)|[go](./array/15.threeSum.go)|M|
 |0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|[go](./string/20.isValid.go)|S|
 |0053|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[go](./array/53.maxSubArray.go)|S|
+|0069|[x 的平方根](https://leetcode-cn.com/problems/sqrtx/)|[go](./binarysearch/69.mySqrt.go)|S|
 |0118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[go](./array/118.generate.go)|S|
 |0206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[go](./linkedList/206.reverseList.go)|S|
 |0237|[删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[go](./linkedList/237.deleteNode.go)|S|
