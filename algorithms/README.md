@@ -16,6 +16,7 @@
 |0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./bit/136.singleNumber.go)|S|
 |0141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[go](./linkedList/141.hasCycle.go)|S|
 |0206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[go](./linkedList/206.reverseList.go)|S|
+|0226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/submissions/)|[go](./tree/226.invertTree.go)|S|
 |0237|[删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[go](./linkedList/237.deleteNode.go)|S|
 |0344|[反转字符串](https://leetcode-cn.com/problems/reverse-string/)|[go](./string/344.reverseString.go)|S|
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./array/442.findDuplicates.go)|M|
