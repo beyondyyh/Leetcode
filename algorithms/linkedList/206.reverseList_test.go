@@ -8,7 +8,7 @@ import (
 // run: go test -v listNode.go 206.*
 func Test_reverseList(t *testing.T) {
 	list1 := buildList(0)
-	dump(list1)
+	// dump(list1)
 	fmt.Println("**********")
 
 	list2 := reverseList(list1)
