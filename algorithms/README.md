@@ -15,6 +15,8 @@
 |0069|[x 的平方根](https://leetcode-cn.com/problems/sqrtx/)|[go](./binarysearch/69.mySqrt.go)|S|
 |0093|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/submissions/)|[go](./string/93.restoreIpAddresses.go)|M|
 |0101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/submissions/)|[go](./tree/101.isSymmetric.go)|S|
+|0102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/)|[go](./tree/102.levelOrder.go)|S|
+|0104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|[go](./tree/104.maxDepth.go)|S|
 |0118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[go](./array/118.generate.go)|S|
 |0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./bit/136.singleNumber.go)|S|
 |0141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[go](./linkedList/141.hasCycle.go)|S|
