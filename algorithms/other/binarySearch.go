@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 二分查找
 func binarySearch(nums []int, target int) bool {
 	l := len(nums)
 	left, right := 0, l-1
