@@ -6,6 +6,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// 广度优先遍历
 func BreadthFirstSearch(root TreeNode) []interface{} {
 	var res []interface{}
 	var nodes []TreeNode = []TreeNode{root}
