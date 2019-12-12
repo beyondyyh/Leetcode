@@ -25,6 +25,7 @@
 |0226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/submissions/)|[go](./tree/226.invertTree.go)|S|
 |0237|[删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[go](./linkedList/237.deleteNode.go)|S|
 |0344|[反转字符串](https://leetcode-cn.com/problems/reverse-string/)|[go](./string/344.reverseString.go)|S|
+|0347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|[go](./myheap/347.topkFrequent.go)|M|
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./array/442.findDuplicates.go)|M|
 |0468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/submissions/)|[go](./string/468.validIPAddress.go)|M|
 |0509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[go](./array/509.fibnacci.go)|S|
