@@ -13,6 +13,7 @@
 |0020|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)|[go](./string/20.isValid.go)|S|
 |0021|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/)|[go](./linkedList/21.mergeTwoSortedLists.go)|S|
 |0022|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|[go](./tree/22.generateParenthesis.go)|M|
+|0033|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/submissions/)|[go](./array/33.search.go)|M|
 |0053|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[go](./array/53.maxSubArray.go)|S|
 |0069|[x 的平方根](https://leetcode-cn.com/problems/sqrtx/)|[go](./binarysearch/69.mySqrt.go)|S|
 |0093|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/submissions/)|[go](./string/93.restoreIpAddresses.go)|M|
