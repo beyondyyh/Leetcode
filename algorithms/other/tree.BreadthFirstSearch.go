@@ -1,4 +1,4 @@
-package tree
+package main
 
 type TreeNode struct {
 	Data  interface{}
