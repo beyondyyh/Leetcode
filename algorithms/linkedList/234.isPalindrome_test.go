@@ -57,7 +57,7 @@ func Test_isPalindrome(t *testing.T) { // {{{
 		want   bool
 	}{
 		{
-			name:   "基数回文",
+			name:   "偶数回文",
 			intput: cases[0],
 			want:   true,
 		},

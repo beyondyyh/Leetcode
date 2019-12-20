@@ -1,5 +1,7 @@
 package linkedList
 
+import "fmt"
+
 func isPalindrome(head *ListNode) bool {
 	// 边界条件：空链表或只有一个节点的链表
 	if head == nil || head.Next == nil {
@@ -21,6 +23,7 @@ func isPalindrome(head *ListNode) bool {
 	slow.Next = nil
 	// slow指针置于前半段链表的起点
 	slow = dummy.Next
+	fmt.Printf("slow:%v fast:%v", display(slow), display(fast))
 
 	// 反转后半段链表
 	var pre *ListNode = nil // 保存指针前一节点的信息，用于反转
@@ -28,6 +31,8 @@ func isPalindrome(head *ListNode) bool {
 		pre, fast, fast.Next = fast, fast.Next, pre
 	}
 	// pre就是反转后的fast链表
+
+	fmt.Printf(" pre:%v\n", display(pre))
 
 	// 前后半链表逐一比较，当链表长度为奇数时前半段链表长度比后半段多1，所以以后半段为准
 	for pre != nil {
