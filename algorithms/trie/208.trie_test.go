@@ -6,6 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// run: go test -v 208.*.go
 func Test_trie(t *testing.T) {
 	assert := assert.New(t)
 
