@@ -6,7 +6,7 @@ import _ "fmt"
 type Trie struct {
 	// val  byte // 可以不需要
 	sons   [26]*Trie
-	isWord bool
+	isLeaf bool
 }
 
 // NewTrie return *Trie
@@ -26,12 +26,12 @@ func (t *Trie) Insert(word string) {
 		// fmt.Printf("%+v %+v %+v\n", string(word[i]), idx, node.sons)
 		node = node.sons[idx]
 	}
-	node.isWord = true
+	node.isLeaf = true
 }
 
 func (t *Trie) Search(word string) bool {
 	node := t.findNodeWithWord(word)
-	return node != nil && node.isWord
+	return node != nil && node.isLeaf
 }
 
 func (t *Trie) StartsWith(prefix string) bool {
