@@ -4,7 +4,7 @@ import _ "fmt"
 
 // Trie是便于word插入和查找的数据结构
 type Trie struct {
-	val  byte
+	// val  byte // 可以不需要
 	sons [26]*Trie
 	end  int
 }
@@ -20,7 +20,8 @@ func (t *Trie) Insert(word string) {
 	for i := 0; i < size; i++ {
 		idx := word[i] - 'a'
 		if node.sons[idx] == nil {
-			node.sons[idx] = &Trie{val: word[i]}
+			// node.sons[idx] = &Trie{val: word[i]}
+			node.sons[idx] = &Trie{}
 		}
 		// fmt.Printf("%+v %+v %+v\n", string(word[i]), idx, node.sons)
 		node = node.sons[idx]
