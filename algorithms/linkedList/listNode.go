@@ -38,7 +38,7 @@ func display(head *ListNode) []interface{} {
 }
 
 /**
- * 构造tree
+ * 构造List
  *	when step = 0: 1->2->3->4->5
  *	when step = 100: 101->102->103->104->105
  */
@@ -60,4 +60,27 @@ func buildList(step int) *ListNode {
 	// ln3.Next = ln4
 	// ln4.Next = ln5
 	return head
+}
+
+// Ints2List convert []int to List
+func Ints2List(nums []int) *ListNode {
+	dummy := &ListNode{Val: -1}
+	cur := dummy
+	for _, num := range nums {
+		cur.Next = &ListNode{Val: num}
+		cur = cur.Next
+	}
+	return dummy.Next
+}
+
+// List2Ints convert list to []int
+func List2Ints(head *ListNode) []int {
+	var items []int
+	cur := head
+	for cur != nil {
+		items = append(items, cur.Val)
+		cur = cur.Next
+	}
+	// items = append(items, "nil")
+	return items
 }

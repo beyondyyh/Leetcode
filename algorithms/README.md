@@ -25,6 +25,7 @@
 |0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./bit/136.singleNumber.go)|S|
 |0141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[go](./linkedList/141.hasCycle.go)|S|
 |0146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[go](./linkedList/146.LRUCache.go)|M|
+|0148|[排序链表](https://leetcode-cn.com/problems/sort-list/)|[go](./linkedList/148.sortList.go)|M|
 |0206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[go](./linkedList/206.reverseList.go)|S|
 |0208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|[go](./trie/208.trie.go)|M|
 |0215|[数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|[go](./myheap/215.findKthLargest.go)|M|
