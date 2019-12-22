@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+// run: go test -v ListNode.go 21.*
 func build_mergeTwoSortedLists_case() (*ListNode, *ListNode) {
 	// 1->2->4
 	l1 := new(ListNode)

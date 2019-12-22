@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// run: go test -v listNode.go 2.*
+// run: go test -v ListNode.go 2.*
 func Test_addTwoNumbers(t *testing.T) {
 	l1 := buildList(0)
 	l2 := buildList(4)

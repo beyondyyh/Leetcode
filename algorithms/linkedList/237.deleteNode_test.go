@@ -4,6 +4,7 @@ import (
 	"testing"
 )
 
+// run: go test -v ListNode.go 237.*
 func Test_deleteNode(t *testing.T) {
 	list1 := buildList(200) // 返回的是头结点
 	deleteNode(list1)

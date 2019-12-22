@@ -2,6 +2,7 @@ package linkedList
 
 import "fmt"
 
+// ListNode 单链表定义
 type ListNode struct {
 	Val  int
 	Next *ListNode

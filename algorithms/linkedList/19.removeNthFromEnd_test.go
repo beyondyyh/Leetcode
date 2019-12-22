@@ -22,7 +22,7 @@ func build_removeNthFromEnd_case() *ListNode {
 	return head
 }
 
-// run: go test -v listNode.go 19.*
+// run: go test -v ListNode.go 19.*
 func Test_removeNthFromEnd1(t *testing.T) {
 	head := build_removeNthFromEnd_case()
 	t.Logf("head:%v\n", display(head))

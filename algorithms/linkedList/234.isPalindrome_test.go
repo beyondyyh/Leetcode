@@ -49,6 +49,7 @@ func build_isPalindrome_case() (cases []*ListNode) { // {{{
 	return
 } // }}}
 
+// run: go test -v ListNode.go 234.*
 func Test_isPalindrome(t *testing.T) { // {{{
 	cases := build_isPalindrome_case()
 	tests := []struct {

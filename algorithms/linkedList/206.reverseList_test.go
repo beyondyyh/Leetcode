@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// run: go test -v listNode.go 206.*
+// run: go test -v ListNode.go 206.*
 func Test_reverseList(t *testing.T) {
 	list1 := buildList(0)
 	// dump(list1)

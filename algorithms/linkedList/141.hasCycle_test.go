@@ -22,6 +22,7 @@ func build_hasCycle_case() *ListNode {
 	return head
 }
 
+// run: go test -v ListNode.go 141.*
 func Test_hasCycle(t *testing.T) {
 	head := build_hasCycle_case()
 	t.Logf("%v", hasCycle(head))
