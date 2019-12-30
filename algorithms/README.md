@@ -6,6 +6,7 @@
 |0002|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[go](./linkedList/2.addTwoNumbers.go)|M|
 |0003|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[go](./string/3.lengthOfLongestSubstring.go)|M|
 |0005|[最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)|[go](./string/5.longestPalindrome.go)|M|
+|0008|[字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/)|[go](./string/8.myAtoi.go)|M|
 |0011|[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/submissions/)|[go](./array/11.maxArea.go)|M|
 |0014|[最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix/)|[go](./string/14.longestCommonPrefix.go)|S|
 |0015|[三数之和](https://leetcode-cn.com/problems/3sum/submissions/)|[go](./array/15.threeSum.go)|M|
