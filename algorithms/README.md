@@ -20,6 +20,7 @@
 |0034|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[go](./array/34.searchRange.go)|M|
 |0053|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[go](./array/53.maxSubArray.go)|S|
 |0069|[x 的平方根](https://leetcode-cn.com/problems/sqrtx/)|[go](./binarysearch/69.mySqrt.go)|S|
+|0078|[子集](https://leetcode-cn.com/problems/subsets/)|[go](./array/78.subsets.go)|M|
 |0093|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/submissions/)|[go](./string/93.restoreIpAddresses.go)|M|
 |0101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/submissions/)|[go](./tree/101.isSymmetric.go)|S|
 |0102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/)|[go](./tree/102.levelOrder.go)|M|
