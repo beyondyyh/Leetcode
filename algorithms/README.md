@@ -26,6 +26,7 @@
 |0102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/)|[go](./tree/102.levelOrder.go)|M|
 |0104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|[go](./tree/104.maxDepth.go)|S|
 |0118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[go](./array/118.generate.go)|S|
+|0121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[go](./array/121.maxProfit.go)|S|
 |0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./bit/136.singleNumber.go)|S|
 |0141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[go](./linkedList/141.hasCycle.go)|S|
 |0146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[go](./linkedList/146.LRUCache.go)|M|
