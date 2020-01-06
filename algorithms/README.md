@@ -24,6 +24,7 @@
 |0071|[简化路径](https://leetcode-cn.com/problems/simplify-path/)|[go](./string/71.simplifyPath.go)|M|
 |0078|[子集](https://leetcode-cn.com/problems/subsets/)|[go](./array/78.subsets.go)|M|
 |0093|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/submissions/)|[go](./string/93.restoreIpAddresses.go)|M|
+|0094|[二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)|[go](./tree/94.inorderTraversal.go)|M|
 |0101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/submissions/)|[go](./tree/101.isSymmetric.go)|S|
 |0102|[二叉树的层次遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/submissions/)|[go](./tree/102.levelOrder.go)|M|
 |0104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|[go](./tree/104.maxDepth.go)|S|

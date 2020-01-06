@@ -1,13 +1,17 @@
 package tree
 
+// TreeNode declare
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
 }
 
+// NULL declare
+var NULL = -1 << 63
+
 // breadthFirstSearch 层级遍历
-func breadthFirstSearch(root TreeNode) []interface{} {
+func breadthFirstSearch(root TreeNode) []interface{} { // {{{
 	var res []interface{}
 	var nodes []TreeNode = []TreeNode{root}
 	for len(nodes) > 0 {
@@ -22,7 +26,7 @@ func breadthFirstSearch(root TreeNode) []interface{} {
 		}
 	}
 	return res
-}
+} // }}}
 
 /**
  * 构造tree
@@ -31,7 +35,7 @@ func breadthFirstSearch(root TreeNode) []interface{} {
  *				2			5
  *			3		4	6		7
  */
-func buildTree(step int) *TreeNode {
+func buildTree(step int) *TreeNode { // {{{
 	var root *TreeNode = new(TreeNode)
 	root.Val = step + 1
 	var l1 *TreeNode = new(TreeNode)
@@ -54,5 +58,35 @@ func buildTree(step int) *TreeNode {
 
 	root.Left = l1
 	root.Right = r1
+	return root
+} // }}}
+
+// Ints2Tree 利用[]int生成*TreeNode
+func Ints2Tree(ints []int) *TreeNode {
+	n := len(ints)
+	if n == 0 {
+		return nil
+	}
+
+	root := &TreeNode{Val: ints[0]}
+	queue := make([]*TreeNode, 1, n*2)
+	queue[0] = root
+
+	for i := 1; i < n; {
+		node := queue[0]
+		queue = queue[1:]
+		if ints[i] != NULL {
+			node.Left = &TreeNode{Val: ints[i]}
+			queue = append(queue, node.Left)
+		}
+		i++
+
+		// 注意i可能越界
+		if i < n && ints[i] != NULL {
+			node.Right = &TreeNode{Val: ints[i]}
+			queue = append(queue, node.Right)
+		}
+		i++
+	}
 	return root
 }
