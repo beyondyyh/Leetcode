@@ -1,29 +1,37 @@
 package mystack
 
-// Stack 存放int数组的栈
+// Stack 存放interface{}的栈
 type Stack struct {
-	nums []int
+	elements []interface{}
 }
 
 // NewStack 返回*mystack.Stack
 func NewStack() *Stack {
-	return &Stack{nums: []int{}}
+	// []interface{}初始化需要make
+	// []int{}不需要
+	return &Stack{elements: make([]interface{}, 0)}
 }
 
-// Len 返回s的长度
+// Len 返回栈的长度
 func (s *Stack) Len() int {
-	return len(s.nums)
+	return len(s.elements)
 }
 
-// Push 将n放入栈
-func (s *Stack) Push(n int) {
-	s.nums = append(s.nums, n)
+// Push 将x放入栈
+func (s *Stack) Push(x interface{}) {
+	s.elements = append(s.elements, x)
 }
 
-// Pop 弹出栈顶element
-func (s *Stack) Pop() int {
-	x := s.nums[s.Len()-1]
-	s.nums = s.nums[:s.Len()-1]
+// Pop 弹出栈顶部 element
+func (s *Stack) Pop() interface{} {
+	x := s.elements[s.Len()-1]
+	s.elements = s.elements[:s.Len()-1]
+	return x
+}
+
+// Peek 查看栈顶部 element，并不修改内部结构
+func (s *Stack) Peek() interface{} {
+	x := s.elements[s.Len()-1]
 	return x
 }
 

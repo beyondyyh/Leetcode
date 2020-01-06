@@ -16,6 +16,7 @@
 |0021|[合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/)|[go](./linkedList/21.mergeTwoSortedLists.go)|S|
 |0022|[括号生成](https://leetcode-cn.com/problems/generate-parentheses/)|[go](./tree/22.generateParenthesis.go)|M|
 |0026|[删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|[go](./array/26.removeDuplicates.go)|S|
+|0032|[最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)|[go](./string/32.longestValidParentheses.go)|<font color="red">H</font>|
 |0033|[搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/submissions/)|[go](./array/33.search.go)|M|
 |0034|[在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[go](./array/34.searchRange.go)|M|
 |0053|[最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)|[go](./array/53.maxSubArray.go)|S|
