@@ -35,6 +35,17 @@ func (s *Stack) Peek() interface{} {
 	return x
 }
 
+// Seek 从栈底部依次取出 element, 不修改内部结构
+func (s *Stack) Seek(i int) interface{} {
+	if i < 0 {
+		i = 0
+	}
+	if i > s.Len()-1 {
+		i = s.Len() - 1
+	}
+	return s.elements[i]
+}
+
 // IsEmpty 返回s是否为空
 func (s *Stack) IsEmpty() bool {
 	return s.Len() == 0
