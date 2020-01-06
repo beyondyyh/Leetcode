@@ -7,8 +7,25 @@ import (
 	"gopl.io/interview2020/Leetcode/algorithms/mystack"
 )
 
-// Stack redeclare
-// type Stack mystack.Stack
+// 此处默认s只包含 '(' 和 ')'
+func isValid(s string) bool { // {{{
+	stack := mystack.NewStack()
+	for _, c := range []byte(s) {
+		if c == '(' {
+			// 如果当前ele是'('则压入栈
+			stack.Push('(')
+		} else if !stack.IsEmpty() && stack.Peek() == '(' {
+			// 如果当前ele是')'，则看下栈顶是否是'('，因为只有'('才能与之配对，是则弹出
+			// 需要注意Pop之前先判断栈是否为空，否则会数组越界
+			stack.Pop()
+		} else {
+			return false
+		}
+	}
+
+	// 最后判断栈是否为空，为空则说明全部匹配完成，isValid
+	return stack.IsEmpty()
+} // }}}
 
 // 方法一：暴力法
 // 使用栈，遍历原始字符串找到每种可能的非空偶数长度的字符串，然后利用栈逐个判断该字串是否是合法的，非常暴力！
@@ -29,21 +46,28 @@ func longestValidParentheses1(s string) int {
 	return int(maxLen)
 }
 
-// 此处默认s只包含 '(' 和 ')'
-func isValid(s string) bool {
+// 方法二：栈
+// 遍历字符串将 '(' 下标放入栈中
+// 对于遇到的每个 ')' ，弹出栈顶的元素并将当前元素的下标与弹出元素下标作差即有效字串的长度，求最大值即可
+func longestValidParentheses2(s string) int {
+	var maxLen float64 = 0
+	// declare栈，首先将 -1 放入栈顶
 	stack := mystack.NewStack()
-	for _, c := range []byte(s) {
+	stack.Push(-1)
+
+	for i, c := range []byte(s) {
 		if c == '(' {
-			// 如果当前ele是'('则压入栈
-			stack.Push('(')
-		} else if !stack.IsEmpty() && stack.Peek() == '(' {
-			// 如果当前ele是')'，则看下栈顶是否是'('，因为只有'('才能与之配对，是则弹出
-			// 需要注意Pop之前先判断栈是否为空，否则会数组越界
-			stack.Pop()
+			stack.Push(i)
 		} else {
-			return false
+			stack.Pop()
+			if stack.IsEmpty() {
+				stack.Push(i)
+			} else {
+				// convert interface{} to int
+				diff := i - (stack.Peek()).(int)
+				maxLen = math.Max(maxLen, float64(diff))
+			}
 		}
 	}
-	// 最后判断栈是否为空，为空则说明全部匹配完成，isValid
-	return stack.IsEmpty()
+	return int(maxLen)
 }
