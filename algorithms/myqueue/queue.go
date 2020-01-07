@@ -27,7 +27,17 @@ func (q *Queue) Pop() int {
 	return x
 }
 
+// Peek returns the first element of q, keep the original structure of q
+func (q *Queue) Peek() int {
+	return q.nums[0]
+}
+
 // IsEmpty returns the q is empty or not
 func (q *Queue) IsEmpty() bool {
 	return q.Len() == 0
+}
+
+// PeekAll returns the whole eles, for debug
+func (q *Queue) PeekAll() []int {
+	return q.nums
 }

@@ -40,6 +40,7 @@
 |0206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[go](./linkedList/206.reverseList.go)|S|
 |0208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|[go](./trie/208.trie.go)|M|
 |0215|[数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|[go](./myheap/215.findKthLargest.go)|M|
+|0225|[用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)|[go](./mystack/225.myStack.go)|S|
 |0226|[翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/submissions/)|[go](./tree/226.invertTree.go)|S|
 |0234|[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/solution/)|[go](./linkedList/234.isPalindrome.go)|S|
 |0237|[删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[go](./linkedList/237.deleteNode.go)|S|

@@ -6,6 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// run: go test -v queue*
 func Test_Queue(t *testing.T) {
 	assert := assert.New(t)
 
