@@ -1,6 +1,6 @@
 package mystack
 
-// Stack 存放interface{}的栈
+// Stack 存放interface{}的栈通用定义
 type Stack struct {
 	elements []interface{}
 }

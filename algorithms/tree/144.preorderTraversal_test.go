@@ -20,7 +20,7 @@ func build_preorderTraversal_case() []entry144 {
 		},
 		{
 			name:     "x2",
-			input:    []int{1, 2, 3, 4, 5, 6},
+			input:    []int{1, 2, 3, 4, 5, 6, NULL},
 			expected: []int{1, 2, 4, 5, 3, 6},
 		},
 		{
@@ -38,7 +38,7 @@ func Test_preorderTraversal(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			root := Ints2Tree(tt.input)
 			if output := preorderTraversal(root); !reflect.DeepEqual(output, tt.expected) {
-				t.Logf("preorderTraversal(%v)=%v, expected=%v", tt.input, output, tt.expected)
+				t.Errorf("preorderTraversal(%v)=%v, expected=%v", tt.input, output, tt.expected)
 			}
 		})
 	}
@@ -49,7 +49,7 @@ func Test_preorderRecurse(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			root := Ints2Tree(tt.input)
 			if output := preorderRecurse(root); !reflect.DeepEqual(output, tt.expected) {
-				t.Logf("preorderRecurse(%v)=%v, expected=%v", tt.input, output, tt.expected)
+				t.Errorf("preorderRecurse(%v)=%v, expected=%v", tt.input, output, tt.expected)
 			}
 		})
 	}

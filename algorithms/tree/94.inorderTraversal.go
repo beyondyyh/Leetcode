@@ -4,7 +4,14 @@ import (
 	"gopl.io/interview2020/Leetcode/algorithms/mystack"
 )
 
-// inorderTraversal 基于栈的遍历 顺序：左->根->右
+// inorderTraversal 基于栈的中序遍历
+// 中序遍历顺序：左->根->右
+// 步骤：中序遍历左子树 -> 访问根结点 -> 中序遍历右子树
+// 如以下二叉树:
+//				A
+//		B				C
+// D		E		F		NULL
+// 前序遍历：ABDECF		中序遍历：DBEAFC	后序遍历：DEBFCA
 // 时间复杂度：O(n), 空间复杂度：O(n)
 func inorderTraversal(root *TreeNode) []int {
 	var res []int

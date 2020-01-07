@@ -38,7 +38,7 @@ func Test_inorderTraversal(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			root := Ints2Tree(tt.input)
 			if output := inorderTraversal(root); !reflect.DeepEqual(output, tt.expected) {
-				t.Logf("inorderTraversal(%v)=%v, expected=%v", tt.input, output, tt.expected)
+				t.Errorf("inorderTraversal(%v)=%v, expected=%v", tt.input, output, tt.expected)
 			}
 		})
 	}
@@ -49,7 +49,7 @@ func Test_inorderRecurse(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			root := Ints2Tree(tt.input)
 			if output := inorderRecurse(root); !reflect.DeepEqual(output, tt.expected) {
-				t.Logf("inorderRecurse(%v)=%v, expected=%v", tt.input, output, tt.expected)
+				t.Errorf("inorderRecurse(%v)=%v, expected=%v", tt.input, output, tt.expected)
 			}
 		})
 	}
