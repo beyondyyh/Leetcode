@@ -32,8 +32,8 @@
 |0121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[go](./array/121.maxProfit.go)|S|
 |0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./bit/136.singleNumber.go)|S|
 |0141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[go](./linkedList/141.hasCycle.go)|S|
-|0144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[go](./tree/144.preorderTraversal.go.go)|M|
-|0145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[go](./tree/145.postorderTraversal.go.go)|H|
+|0144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[go](./tree/144.preorderTraversal.go)|M|
+|0145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[go](./tree/145.postorderTraversal.go)|H|
 |0146|[LRU缓存机制](https://leetcode-cn.com/problems/lru-cache/)|[go](./linkedList/146.LRUCache.go)|M|
 |0148|[排序链表](https://leetcode-cn.com/problems/sort-list/)|[go](./linkedList/148.sortList.go)|M|
 |0155|[最小栈](https://leetcode-cn.com/problems/min-stack/)|[go](./mystack/155.minStack.go)|S|
