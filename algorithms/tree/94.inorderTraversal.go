@@ -4,39 +4,38 @@ import (
 	"gopl.io/interview2020/Leetcode/algorithms/mystack"
 )
 
-// 基于栈的遍历
+// inorderTraversal 基于栈的遍历 顺序：左->根->右
 // 时间复杂度：O(n), 空间复杂度：O(n)
 func inorderTraversal(root *TreeNode) []int {
 	var res []int
-	stack := mystack.NewStack()
-	curr := root
+	if root == nil {
+		return res
+	}
 
-	for curr != nil || !stack.IsEmpty() {
-		for curr != nil {
-			stack.Push(curr)
-			curr = curr.Left
+	stack := mystack.NewStack()
+	for root != nil || !stack.IsEmpty() {
+		for root != nil {
+			stack.Push(root)
+			root = root.Left
 		}
-		curr = (stack.Pop()).(*TreeNode)
-		res = append(res, curr.Val)
-		curr = curr.Right
+		// curr node
+		node := (stack.Pop()).(*TreeNode)
+		res = append(res, node.Val)
+		root = node.Right
 	}
 
 	return res
 }
 
-// 递归遍历
+// 递归大法 顺序：左->根->右
 func inorderRecurse(root *TreeNode) []int {
+	var res []int
 	if root == nil {
-		return nil
+		return res
 	}
 
-	if root.Left == nil && root.Right == nil {
-		return []int{root.Val}
-	}
-
-	res := inorderRecurse(root.Left)
+	res = inorderRecurse(root.Left)
 	res = append(res, root.Val)
 	res = append(res, inorderRecurse(root.Right)...)
-
 	return res
 }
