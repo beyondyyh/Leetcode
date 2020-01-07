@@ -28,7 +28,6 @@ func preorderTraversal(root *TreeNode) []int {
 		if node.Left != nil {
 			stack.Push(node.Left)
 		}
-
 	}
 	return res
 }
