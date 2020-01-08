@@ -25,5 +25,4 @@ func Test_Queue(t *testing.T) {
 		assert.Equal(i, x, "Pop from q")
 	}
 	assert.True(q.IsEmpty(), "Check q is empty or not after pop")
-
 }

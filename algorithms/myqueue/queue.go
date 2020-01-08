@@ -27,7 +27,7 @@ func (q *Queue) Pop() int {
 	return x
 }
 
-// Peek returns the first element of q, keep the original structure of q
+// Peek returns the front element of q, keep the original structure of q
 func (q *Queue) Peek() int {
 	return q.nums[0]
 }

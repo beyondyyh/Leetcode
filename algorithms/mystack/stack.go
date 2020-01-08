@@ -5,7 +5,7 @@ type Stack struct {
 	elements []interface{}
 }
 
-// NewStack 返回*mystack.Stack
+// NewStack 返回*Stack
 func NewStack() *Stack {
 	// []interface{}初始化需要make
 	// []int{}不需要
