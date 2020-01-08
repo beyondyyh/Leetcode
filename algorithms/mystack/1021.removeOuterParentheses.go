@@ -4,7 +4,7 @@ package mystack
 func removeOuterParentheses(S string) string {
 	var res string
 	stack := NewStack()
-	for _, c := range []byte(S) {
+	for _, c := range S {
 		if c == ')' {
 			stack.Pop()
 		}
