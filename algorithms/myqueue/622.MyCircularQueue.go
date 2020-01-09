@@ -13,7 +13,9 @@ package myqueue
 // 		isEmpty(): 检查循环队列是否为空。
 // 		isFull(): 检查循环队列是否已满。
 
-// 题解：参考liweiwei1419非常棒的设计思路（https://leetcode-cn.com/problems/design-circular-queue/solution/shu-zu-shi-xian-de-xun-huan-dui-lie-by-liweiwei141/），基于golang实现
+// 题解：参考liweiwei1419非常棒的设计思路（https://leetcode-cn.com/problems/design-circular-queue/solution/shu-zu-shi-xian-de-xun-huan-dui-lie-by-liweiwei141/），
+// 核心思想：取模~~~~~~~~~
+// 基于golang实现
 
 import "fmt"
 
@@ -49,9 +51,9 @@ func (q *MyCircularQueue) Rear() int {
 		return -1
 	}
 
-	// 其实就是rear-1
-	pos := (q.rear - 1 + q.length) % q.length
-	return q.nums[pos]
+	// rear存的是最后 1 个有效数据的下一个位置，所以为rear-1
+	// rear-1可能会越界，所以需要加上q.length之后再取模
+	return q.nums[(q.rear-1+q.length)%q.length]
 }
 
 // EnQueue Insert an element into the queue.
@@ -62,8 +64,9 @@ func (q *MyCircularQueue) EnQueue(x int) bool {
 		return false
 	}
 
+	// 先赋值再移动rear指针向后一位
 	q.nums[q.rear] = x
-	q.rear = (q.rear + 1) % q.length // rear指针后移一位
+	q.rear = (q.rear + 1) % q.length
 	return true
 }
 
@@ -74,7 +77,8 @@ func (q *MyCircularQueue) DeQueue() bool {
 		return false
 	}
 
-	q.front = (q.front + 1) % q.length // front指针后移一位
+	// front指针指向是队列第一个元素，所以出队是front向后移动一位
+	q.front = (q.front + 1) % q.length
 	return true
 }
 
