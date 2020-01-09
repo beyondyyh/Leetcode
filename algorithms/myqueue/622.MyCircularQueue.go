@@ -36,7 +36,7 @@ func NewMyCircularQueue(k int) *MyCircularQueue {
 
 // Front Returns the first item of the queue
 func (q *MyCircularQueue) Front() int {
-	if q.isEmpty() {
+	if q.IsEmpty() {
 		return -1
 	}
 
@@ -45,7 +45,7 @@ func (q *MyCircularQueue) Front() int {
 
 // Rear Returns the last item of the queue.
 func (q *MyCircularQueue) Rear() int {
-	if q.isEmpty() {
+	if q.IsEmpty() {
 		return -1
 	}
 
@@ -54,11 +54,11 @@ func (q *MyCircularQueue) Rear() int {
 	return q.nums[pos]
 }
 
-// enQueue Insert an element into the queue.
+// EnQueue Insert an element into the queue.
 // Returns true if the operation is successful.
-func (q *MyCircularQueue) enQueue(x int) bool {
-	fmt.Printf("front:%d rear:%d isFull:%t\n", q.front, q.rear, q.isFull())
-	if q.isFull() {
+func (q *MyCircularQueue) EnQueue(x int) bool {
+	fmt.Printf("front:%d rear:%d IsFull:%t\n", q.front, q.rear, q.IsFull())
+	if q.IsFull() {
 		return false
 	}
 
@@ -67,10 +67,10 @@ func (q *MyCircularQueue) enQueue(x int) bool {
 	return true
 }
 
-// deQueue Delete an element from the queue.
+// DeQueue Delete an element from the queue.
 // Returns true if the operation is successful.
-func (q *MyCircularQueue) deQueue() bool {
-	if q.isEmpty() {
+func (q *MyCircularQueue) DeQueue() bool {
+	if q.IsEmpty() {
 		return false
 	}
 
@@ -78,13 +78,13 @@ func (q *MyCircularQueue) deQueue() bool {
 	return true
 }
 
-// isEmpty check the queue is empty.
-func (q *MyCircularQueue) isEmpty() bool {
+// IsEmpty check the queue is empty.
+func (q *MyCircularQueue) IsEmpty() bool {
 	return q.front == q.rear
 }
 
-// isFull check the queue is full.
-func (q *MyCircularQueue) isFull() bool {
+// IsFull check the queue is full.
+func (q *MyCircularQueue) IsFull() bool {
 	// 这是这个经典设计的原因
 	return (q.rear+1)%q.length == q.front
 }
