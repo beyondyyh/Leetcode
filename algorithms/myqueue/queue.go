@@ -5,9 +5,9 @@ type Queue struct {
 	nums []int
 }
 
-// NewQueue returns *myqueue.Queue
+// NewQueue returns *Queue
 func NewQueue() *Queue {
-	return &Queue{nums: []int{}}
+	return &Queue{nums: make([]int, 0)}
 }
 
 // Len returns the length of s

@@ -23,7 +23,7 @@ func (q *MyCircularDeque) InsertFront(x int) bool {
 		return false
 	}
 
-	// front指针前移一位，取模是关键，指针迁移需要先加q.length再整体取模，因为可能出现负数
+	// front指针前移一位，取模是关键，指针前移需要先加q.length再整体取模，因为可能出现负数
 	// 而后移是加法不需要加q.length
 	q.front = (q.front - 1 + q.length) % q.length
 	q.nums[q.front] = x
@@ -60,7 +60,7 @@ func (q *MyCircularDeque) DeleteLast() bool {
 		return false
 	}
 
-	// rear指针迁移一位
+	// rear指针前移一位
 	q.rear = (q.rear - 1 + q.length) % q.length
 	return true
 }
