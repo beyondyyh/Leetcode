@@ -52,6 +52,7 @@
 |0468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/submissions/)|[go](./string/468.validIPAddress.go)|M|
 |0509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[go](./array/509.fibnacci.go)|S|
 |0617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|[go](./tree/617.mergeTrees.go)|S|
+|0622|[设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)|[go](./myqueue/622.MyCircularQueue.go)|M|
 |1021|[删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)|[go](./mystack/1021.removeOuterParentheses.go)|S|
 |1108|[地址无效化](https://leetcode-cn.com/problems/defanging-an-ip-address/)|[go](./string/1108.defangIPaddr.go)|S|
 |1213|[三个有序数组的交集](https://leetcode-cn.com/problems/intersection-of-three-sorted-arrays/)|[go](./array/1213.arraysIntersection.go)|S|
