@@ -53,7 +53,7 @@
 |0509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[go](./array/509.fibnacci.go)|S|
 |0617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|[go](./tree/617.mergeTrees.go)|S|
 |0622|[设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)|[go](./myqueue/622.MyCircularQueue.go)|M|
-|0641|[设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/)|[go](./myqueue/641.MyCircularDeque.go)|M|
+|0641|[设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/)|[go](./myqueue/641.MyCircularDequeBasedOnDLinkedList.go)|M|
 |0933|[最近的请求次数](https://leetcode-cn.com/problems/number-of-recent-calls/)|[go](./myqueue/933.RecentCounter.go)|S|
 |1021|[删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)|[go](./mystack/1021.removeOuterParentheses.go)|S|
 |1108|[地址无效化](https://leetcode-cn.com/problems/defanging-an-ip-address/)|[go](./string/1108.defangIPaddr.go)|S|
