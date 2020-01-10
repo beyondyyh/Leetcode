@@ -33,16 +33,3 @@ func inorderTraversal(root *TreeNode) []int {
 
 	return res
 }
-
-// 递归大法 顺序：左->根->右
-func inorderRecurse(root *TreeNode) []int {
-	var res []int
-	if root == nil {
-		return res
-	}
-
-	res = inorderRecurse(root.Left)
-	res = append(res, root.Val)
-	res = append(res, inorderRecurse(root.Right)...)
-	return res
-}

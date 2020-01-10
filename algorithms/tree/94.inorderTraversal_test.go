@@ -3,6 +3,8 @@ package tree
 import (
 	"reflect"
 	"testing"
+
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
 type entry94 struct {
@@ -32,11 +34,11 @@ func build_inorderTraversal_case() []entry94 {
 	return cases
 }
 
-// run: go test -v treeNode.go 94.*
+// run: go test -v base.go 94.*
 func Test_inorderTraversal(t *testing.T) {
 	for _, tt := range build_inorderTraversal_case() {
 		t.Run(tt.name, func(t *testing.T) {
-			root := Ints2Tree(tt.input)
+			root := kit.Ints2Tree(tt.input)
 			if output := inorderTraversal(root); !reflect.DeepEqual(output, tt.expected) {
 				t.Errorf("inorderTraversal(%v)=%v, expected=%v", tt.input, output, tt.expected)
 			}
@@ -44,12 +46,12 @@ func Test_inorderTraversal(t *testing.T) {
 	}
 }
 
-func Test_inorderRecurse(t *testing.T) {
+func Test_Tree2Inorder(t *testing.T) {
 	for _, tt := range build_inorderTraversal_case() {
 		t.Run(tt.name, func(t *testing.T) {
-			root := Ints2Tree(tt.input)
-			if output := inorderRecurse(root); !reflect.DeepEqual(output, tt.expected) {
-				t.Errorf("inorderRecurse(%v)=%v, expected=%v", tt.input, output, tt.expected)
+			root := kit.Ints2Tree(tt.input)
+			if output := kit.Tree2Inorder(root); !reflect.DeepEqual(output, tt.expected) {
+				t.Errorf("Tree2Inorder(%v)=%v, expected=%v", tt.input, output, tt.expected)
 			}
 		})
 	}

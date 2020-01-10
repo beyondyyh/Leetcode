@@ -2,7 +2,8 @@ package tree
 
 import (
 	_ "fmt"
-	"gopl.io/interview2020/Leetcode/algorithms/mystack"
+
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
 // postorderTraversal 基于栈的后序遍历
@@ -23,7 +24,7 @@ func postorderTraversal(root *TreeNode) []int {
 	// 保存最近访问的一个的根节点，用于判断当前是从左子树到的根节点还是右子树到的根节点
 	// 如果当前节点的右节点和上一次遍历的节点相同，那就表明当前是从右节点过来的了
 	var latest *TreeNode = nil
-	stack := mystack.NewStack()
+	stack := kit.NewStack()
 
 	for root != nil || !stack.IsEmpty() {
 		if root != nil {
@@ -44,18 +45,5 @@ func postorderTraversal(root *TreeNode) []int {
 			}
 		}
 	}
-	return res
-}
-
-// 递归大法 顺序：左->右->根
-func postorderRecurse(root *TreeNode) []int {
-	var res []int
-	if root == nil {
-		return res
-	}
-
-	res = append(res, postorderRecurse(root.Left)...)
-	res = append(res, postorderRecurse(root.Right)...)
-	res = append(res, root.Val)
 	return res
 }

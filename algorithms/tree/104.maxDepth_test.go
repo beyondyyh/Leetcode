@@ -3,6 +3,8 @@ package tree
 import (
 	"fmt"
 	"testing"
+
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
 // [3,9,20,nil,nil,15,7]
@@ -26,8 +28,9 @@ func build_maxDepth_case() *TreeNode {
 	return root
 }
 
+// run: go test -v base.go 104.*
 func Test_maxDepth(t *testing.T) {
 	tests := build_maxDepth_case()
-	t.Logf("%v\n", breadthFirstSearch(*tests))
+	t.Logf("%v\n", kit.BreadthFirstSearch(*tests))
 	fmt.Println(maxDepth(tests))
 }
