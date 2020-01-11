@@ -1,6 +1,6 @@
 package tree
 
-import "fmt"
+import _ "fmt"
 
 func generateParenthesis(n int) []string {
 	var res []string
@@ -23,11 +23,11 @@ func generateParenthesis(n int) []string {
  * @param res    结果集
  */
 func dfs(curstr string, left, right, n int, res *[]string) {
-	fmt.Printf("left:%d right:%d n:%d curstr:%s\n", left, right, n, curstr)
+	// fmt.Printf("left:%d right:%d n:%d curstr:%s\n", left, right, n, curstr)
 	// 因为是递归函数，所以先写递归终止条件
 	if left == n && right == n {
 		*res = append(*res, curstr)
-		fmt.Printf("curstr:%s res:%v\n", curstr, *res)
+		// fmt.Printf("curstr:%s res:%v\n", curstr, *res)
 		return
 	}
 
