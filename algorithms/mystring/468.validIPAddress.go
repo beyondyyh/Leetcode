@@ -1,7 +1,6 @@
-package main
+package mystring
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -51,9 +50,4 @@ func isIPv6(parts []string) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-	IP := "172.16.254.01"
-	fmt.Println(validIPAddress(IP))
 }

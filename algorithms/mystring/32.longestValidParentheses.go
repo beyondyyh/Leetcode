@@ -1,20 +1,20 @@
-package main
+package mystring
 
 import (
 	"fmt"
 	"math"
 
-	"gopl.io/interview2020/Leetcode/algorithms/mystack"
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
 // 此处默认s只包含 '(' 和 ')'
-func isValid(s string) bool { // {{{
-	stack := mystack.NewStack()
+func isValidParentheses(s string) bool { // {{{
+	stack := kit.NewStack()
 	for _, c := range []byte(s) {
 		if c == '(' {
 			// 如果当前ele是'('则压入栈
-			stack.Push('(')
-		} else if !stack.IsEmpty() && stack.Peek() == '(' {
+			stack.Push(c)
+		} else if !stack.IsEmpty() && (stack.Peek()).(byte) == '(' {
 			// 如果当前ele是')'，则看下栈顶是否是'('，因为只有'('才能与之配对，是则弹出
 			// 需要注意Pop之前先判断栈是否为空，否则会数组越界
 			stack.Pop()
@@ -35,8 +35,8 @@ func longestValidParentheses1(s string) int {
 	for i := 0; i < len(s); i++ {
 		for j := i + 2; j <= len(s); {
 			substr := string([]byte(s)[i:j])
-			fmt.Printf("substr:%s, isValid:%t\n", substr, isValid(substr))
-			if isValid(substr) {
+			fmt.Printf("substr:%s, isValid:%t\n", substr, isValidParentheses(substr))
+			if isValidParentheses(substr) {
 				// math.Max, math.Min参数和返回值都是float64类型
 				maxLen = math.Max(maxLen, float64(j-1))
 			}
@@ -52,7 +52,7 @@ func longestValidParentheses1(s string) int {
 func longestValidParentheses2(s string) int {
 	var maxLen float64 = 0
 	// declare栈，首先将 -1 放入栈顶
-	stack := mystack.NewStack()
+	stack := kit.NewStack()
 	stack.Push(-1)
 
 	for i, c := range []byte(s) {

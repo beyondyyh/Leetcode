@@ -1,13 +1,12 @@
-package main
+package mystring
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
 
-// 暴力法，非常暴力
-func restoreIpAddresses1(s string) []string {
+// 暴力法，非常暴力，牛逼克拉斯
+func restoreIpAddresses(s string) []string {
 	var res []string
 	for a := 1; a < 4; a++ {
 		for b := 1; b < 4; b++ {
@@ -32,9 +31,4 @@ func restoreIpAddresses1(s string) []string {
 		}
 	}
 	return res
-}
-
-func main() {
-	s := "25525511135"
-	fmt.Println(restoreIpAddresses1(s))
 }

@@ -1,16 +1,13 @@
-package main
+package mystring
 
 import "testing"
 
-type entry32 struct {
-	name     string
-	input    string
-	expected int
-}
-
-// build test case
-func build_longsestValidParentheses_case() []entry32 {
-	cases := []entry32{
+// run: go test -v 32.*
+func Test_longestValidParentheses1(t *testing.T) {
+	cases := []struct {
+		name, input string
+		expected    int
+	}{
 		{
 			name:     "x1",
 			input:    "(()",
@@ -28,25 +25,12 @@ func build_longsestValidParentheses_case() []entry32 {
 		},
 	}
 
-	return cases
-}
-
-// run: go test -v 32.*
-func Test_longestValidParentheses1(t *testing.T) {
-	tests := build_longsestValidParentheses_case()
-	for _, tt := range tests {
+	for _, tt := range cases {
 		t.Run(tt.name, func(t *testing.T) {
 			if output := longestValidParentheses1(tt.input); output != tt.expected {
 				t.Errorf("longestValidParentheses1(%s)=%d, expected=%d", tt.input, output, tt.expected)
 			}
-		})
-	}
-}
 
-func Test_longestValidParentheses2(t *testing.T) {
-	tests := build_longsestValidParentheses_case()
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
 			if output := longestValidParentheses2(tt.input); output != tt.expected {
 				t.Errorf("longestValidParentheses2(%s)=%d, expected=%d", tt.input, output, tt.expected)
 			}

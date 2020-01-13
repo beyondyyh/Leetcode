@@ -1,14 +1,4 @@
-package main
-
-import "fmt"
-
-func main() {
-	s := "babad"
-	s = "abbacde"
-	fmt.Printf("original string: %s\n", s)
-	// fmt.Println(longestPalindrome1(s))
-	fmt.Println(longestPalindrome2(s))
-}
+package mystring
 
 // 1. 暴力解法: 列出子串, 筛选出长度最大值
 func longestPalindrome1(s string) string { // {{{
@@ -23,6 +13,7 @@ func longestPalindrome1(s string) string { // {{{
 	for i := 0; i < len(s); i++ {
 		for j := i + 1; j <= len(s); j++ {
 			substr := s[i:j]
+			// fmt.Println(substr)
 			if isPalindrome(substr) {
 				if len(substr) > max {
 					max = len(substr)
@@ -74,7 +65,7 @@ func longestPalindrome2(s string) string {
 			start = i - (length-1)/2
 			end = i + length/2
 		}
-		fmt.Printf("i:%d len1:%d len2:%d length:%d sub:%s\n", i, len1, len2, length, s[start:end+1])
+		// fmt.Printf("i:%d len1:%d len2:%d length:%d sub:%s\n", i, len1, len2, length, s[start:end+1])
 	}
 	return s[start : end+1]
 }

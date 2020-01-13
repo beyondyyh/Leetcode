@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package mystring
 
 func reverseString(s []byte) string {
 	l := len(s)
@@ -8,9 +6,4 @@ func reverseString(s []byte) string {
 		s[i], s[l-1-i] = s[l-1-i], s[i]
 	}
 	return string(s)
-}
-
-func main() {
-	s := "hello"
-	fmt.Println(reverseString([]byte(s)))
 }

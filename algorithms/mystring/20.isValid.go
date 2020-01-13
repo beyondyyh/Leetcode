@@ -1,17 +1,9 @@
-package main
+package mystring
 
-import "fmt"
+import "gopl.io/interview2020/Leetcode/algorithms/kit"
 
-func main() {
-	s := "abcdefg"
-	stack := []byte(s)
-	fmt.Println(pop(byte('g'), &stack), stack) // true
-	fmt.Println("---------")
-	fmt.Println(isValid("()()((([]{})))")) // true
-	fmt.Println(isValid("()()())"))        // false
-}
-
-func isValid(s string) bool {
+// isValid1 based on stack
+func isValid1(s string) bool { // {{{
 	stack := make([]byte, 0)
 	smap := map[byte]byte{
 		')': '(',
@@ -36,10 +28,10 @@ func isValid(s string) bool {
 	}
 
 	return len(stack) == 0
-}
+} // }}}
 
 // 实现一个栈 的pop方法 栈：先入后出
-func pop(char byte, stack *[]byte) bool {
+func pop(char byte, stack *[]byte) bool { // {{{
 	l := len(*stack)
 	if l < 1 {
 		return false
@@ -49,4 +41,37 @@ func pop(char byte, stack *[]byte) bool {
 	var poped byte
 	*stack, poped = (*stack)[:l-1], (*stack)[l-1]
 	return poped == char
+} // }}}
+
+// isValid2 based on kit.Stack
+func isValid2(s string) bool {
+	stack := kit.NewStack()
+	smap := map[byte]byte{
+		')': '(',
+		']': '[',
+		'}': '{',
+	}
+
+	for _, c := range []byte(s) {
+		if c == '(' || c == '[' || c == '{' {
+			stack.Push(c)
+		} else {
+			v, ok := smap[c]
+			// invalid char
+			if !ok {
+				return false
+			}
+			if stack.IsEmpty() {
+				return false
+			}
+
+			// top of the stacke is not in ['(', '[', '{']
+			if (stack.Peek()).(byte) != v {
+				return false
+			}
+			stack.Pop()
+		}
+	}
+
+	return stack.IsEmpty()
 }

@@ -1,8 +1,6 @@
-package main
+package mystring
 
-import (
-	"testing"
-)
+import "testing"
 
 type entry71 struct {
 	name     string

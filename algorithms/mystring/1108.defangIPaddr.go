@@ -1,14 +1,6 @@
-package main
+package mystring
 
-import (
-	"fmt"
-	"regexp"
-)
-
-func main() {
-	address := "1.1.3.2"
-	fmt.Println(defangIPaddr(address))
-}
+import "regexp"
 
 func defangIPaddr(address string) string {
 	re := regexp.MustCompile(`\.`)

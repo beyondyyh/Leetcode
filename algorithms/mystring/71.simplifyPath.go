@@ -1,11 +1,11 @@
-package main
+package mystring
 
 import (
 	"fmt"
 	"path/filepath"
 	"strings"
 
-	"gopl.io/interview2020/Leetcode/algorithms/mystack"
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
 // 1. 用栈
@@ -13,7 +13,7 @@ import (
 // 3. 遍历数组, 当s[i]==".."并且栈不空时pop, 当s[i]!="" && s[i]!="." && s[i]!=".."时，把s[i]路径压入栈;
 // 4. 如果栈空, 返回"/", 栈非空, 从栈底部（注意不是栈顶）开始拼接字符串
 func simplifyPath(path string) string {
-	stack := mystack.NewStack()
+	stack := kit.NewStack()
 	parts := strings.Split(path, "/")
 	fmt.Printf("origin:%s split parts:%v\n", path, parts)
 

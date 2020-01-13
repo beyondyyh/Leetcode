@@ -1,13 +1,6 @@
-package main
+package mystring
 
-import (
-	"fmt"
-)
-
-func main() {
-	s := "abcabcbb"
-	fmt.Println(lengthOfLongestSubstring(s))
-}
+import "fmt"
 
 // 无重复字符的最长子串, https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
 // 1. 暴力解法是遍历取出所有子串，然后写一个allUnique方法check字符串是否不重复，利用map，在不重复的字串中找出最长的
