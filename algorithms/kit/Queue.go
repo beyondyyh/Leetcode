@@ -1,4 +1,4 @@
-package myqueue
+package kit
 
 // Queue for int array
 type Queue struct {

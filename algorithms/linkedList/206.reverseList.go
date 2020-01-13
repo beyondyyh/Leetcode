@@ -1,15 +1,19 @@
 package linkedList
 
-import "fmt"
+import (
+	"fmt"
+
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
+)
 
 func reverseList(head *ListNode) *ListNode {
 	cur := head
 	var pre *ListNode = nil
 	for cur != nil {
-		fmt.Printf("pre:%v cur:%v\n", display(pre), display(cur))
+		fmt.Printf("pre:%v cur:%v\n", kit.List2Ints(pre), kit.List2Ints(cur))
 		pre, cur, cur.Next = cur, cur.Next, pre
 	}
-	fmt.Printf("pre:%v cur:%v\n", display(pre), display(cur))
+	fmt.Printf("pre:%v cur:%v\n", kit.List2Ints(pre), kit.List2Ints(cur))
 	return pre
 }
 

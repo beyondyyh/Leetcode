@@ -1,5 +1,7 @@
 package mystack
 
+import "gopl.io/interview2020/Leetcode/algorithms/kit"
+
 // MinStack declare
 type MinStack struct {
 	data   *Stack // 数据栈
@@ -9,8 +11,8 @@ type MinStack struct {
 // NewMinStack returns MinStack constructor
 func NewMinStack() *MinStack {
 	return &MinStack{
-		data:   NewStack(),
-		helper: NewStack(),
+		data:   kit.NewStack(),
+		helper: kit.NewStack(),
 	}
 }
 

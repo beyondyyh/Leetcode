@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// run: go test -v 225.*
+// run: go test -v base.go 225.*
 func Test_MyStack(t *testing.T) {
 	assert := assert.New(t)
 

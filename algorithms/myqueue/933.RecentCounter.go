@@ -1,5 +1,9 @@
 package myqueue
 
+import (
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
+)
+
 // 题目：最近的请求次数 https://leetcode-cn.com/problems/number-of-recent-calls/
 // 题解：此题主要的理解题目吧，理解了就很简单
 // 只会考虑最近3000毫秒到现在的 ping 数，因此可以使用队列存储这些 ping 的记录。
@@ -8,13 +12,13 @@ package myqueue
 
 // RecentCounter structure declare
 type RecentCounter struct {
-	queue *Queue
+	queue *kit.Queue
 }
 
 // NewRecentCounter
 func NewRecentCounter() *RecentCounter {
 	return &RecentCounter{
-		queue: NewQueue(),
+		queue: kit.NewQueue(),
 	}
 }
 

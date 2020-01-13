@@ -12,6 +12,10 @@ var NULL = -1 << 63
 
 // BreadthFirstSearch 层级遍历
 func BreadthFirstSearch(root TreeNode) []interface{} { // {{{
+	if &root == nil {
+		return nil
+	}
+
 	var res []interface{}
 	var nodes []TreeNode = []TreeNode{root}
 	for len(nodes) > 0 {

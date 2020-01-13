@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// run: go test -v queue.go 933.*
+// run: go test -v 933.*
 func Test_RecentCounter(t *testing.T) {
 	assert := assert.New(t)
 	rc := NewRecentCounter()

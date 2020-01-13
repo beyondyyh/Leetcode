@@ -1,5 +1,7 @@
 package mystack
 
+import "gopl.io/interview2020/Leetcode/algorithms/kit"
+
 // problem: https://leetcode-cn.com/problems/implement-queue-using-stacks/
 // 使用栈实现队列的下列操作：
 //
@@ -22,8 +24,8 @@ type MyQueue struct {
 // NewMyQueue constructor
 func NewMyQueue() *MyQueue {
 	return &MyQueue{
-		stackPush: NewStack(),
-		stackPop:  NewStack(),
+		stackPush: kit.NewStack(),
+		stackPop:  kit.NewStack(),
 	}
 }
 

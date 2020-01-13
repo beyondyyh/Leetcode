@@ -1,4 +1,4 @@
-package myheap
+package kit
 
 type MinHeap []int
 

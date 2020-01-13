@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-// run: go test -v DListNode.go 146.*
+// run: go test -v base.go 146.*
 // capacity is 3
 func Test_LRUCache_c3(t *testing.T) { // {{{
 	assert := assert.New(t)

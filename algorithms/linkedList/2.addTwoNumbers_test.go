@@ -1,19 +1,35 @@
 package linkedList
 
 import (
-	"fmt"
+	"reflect"
 	"testing"
+
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
-// run: go test -v ListNode.go 2.*
+// run: go test -v base.go 2.*
 func Test_addTwoNumbers(t *testing.T) {
-	l1 := buildList(0)
-	l2 := buildList(4)
-	l3 := addTwoNumbers(l1, l2)
-	fmt.Println("l1:")
-	dump(l1)
-	fmt.Println("l2:")
-	dump(l2)
-	fmt.Println("l3:")
-	dump(l3)
+	cases := []struct {
+		name     string
+		input    [][]int
+		expected []int
+	}{
+		{
+			name:     "x1",
+			input:    [][]int{{2, 4, 3}, {5, 6, 4}},
+			expected: []int{7, 0, 8},
+		},
+	}
+
+	for _, tt := range cases {
+		t.Run(tt.name, func(t *testing.T) {
+			l1 := kit.Ints2List(tt.input[0])
+			l2 := kit.Ints2List(tt.input[1])
+			output := addTwoNumbers(l1, l2)
+			out2ints := kit.List2Ints(output)
+			if !reflect.DeepEqual(out2ints, tt.expected) {
+				t.Errorf("addTwoNumbers(%v, %v)=%v, expected=%v", tt.input[0], tt.input[1], out2ints, tt.expected)
+			}
+		})
+	}
 }

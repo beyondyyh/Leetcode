@@ -1,4 +1,4 @@
-package myqueue
+package kit
 
 import (
 	"testing"

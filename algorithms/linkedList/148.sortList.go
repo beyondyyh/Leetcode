@@ -1,7 +1,5 @@
 package linkedList
 
-import _ "fmt"
-
 // 主要考察3个知识点，
 // 1. 归并排序的整体思想: 找到链表的middle节点，然后递归对前半部分和后半部分分别进行归并排序，最后对两个以排好序的链表进行Merge
 // 2. 找到一个链表的中间节点的方法: 快慢指针
@@ -39,22 +37,22 @@ func split(head *ListNode) (*ListNode, *ListNode) {
 // mergeTwoSortedList
 func mergeTwoSortedList(left, right *ListNode) *ListNode {
 	var dummy *ListNode = &ListNode{Val: -1}
-	cur := dummy
+	curr := dummy
 	for left != nil && right != nil {
 		if left.Val <= right.Val {
-			cur.Next, left = left, left.Next
+			curr.Next, left = left, left.Next
 		} else {
-			cur.Next, right = right, right.Next
+			curr.Next, right = right, right.Next
 		}
-		cur = cur.Next
+		curr = curr.Next
 	}
 
 	if left == nil {
-		cur.Next = right
+		curr.Next = right
 	}
 
 	if right == nil {
-		cur.Next = left
+		curr.Next = left
 	}
 
 	return dummy.Next

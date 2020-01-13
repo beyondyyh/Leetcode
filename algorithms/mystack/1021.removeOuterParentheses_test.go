@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-// run: go test -v stack.go 1021.*
+// run: go test -v base.go 1021.*
 func Test_removeOuterParentheses(t *testing.T) {
 	cases := []struct {
 		name, input, expected string

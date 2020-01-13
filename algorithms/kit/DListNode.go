@@ -1,4 +1,4 @@
-package linkedList
+package kit
 
 // DListNode 双向链表基本定义
 // Key, Val 可以是任意结构

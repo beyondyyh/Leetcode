@@ -1,4 +1,4 @@
-package mystack
+package kit
 
 import (
 	"testing"

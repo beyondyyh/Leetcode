@@ -2,7 +2,6 @@ package myheap
 
 import (
 	"container/heap"
-	"fmt"
 )
 
 // 第K大的数，用最小堆
@@ -17,12 +16,9 @@ func findKthLargest(nums []int, k int) int {
 	heap.Init(h)
 	for _, num := range nums {
 		heap.Push(h, num)
-		fmt.Printf("%v push\n", num)
 		if h.Len() > k {
-			x := heap.Pop(h)
-			fmt.Printf("%v pop\n", x)
+			heap.Pop(h)
 		}
-		fmt.Printf("heap length is:%d\n", h.Len())
 	}
 	return (*h)[0]
 }

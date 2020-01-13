@@ -4,14 +4,16 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
 )
 
-// run: go test -v ListNode.go 148.*
+// run: go test -v base.go 148.*
 func Test_sortList(t *testing.T) {
 	assert := assert.New(t)
 	tests := []struct {
-		input []int
-		want  []int
+		input    []int
+		expected []int
 	}{
 		{
 			[]int{4, 2, 1, 3},
@@ -25,8 +27,8 @@ func Test_sortList(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Logf("~~%v~~\n", tt)
-		head := Ints2List(tt.input)
-		assert.Equal(tt.want, List2Ints(sortList(head)), "输入:%v", tt)
+		head := kit.Ints2List(tt.input)
+		assert.Equal(tt.expected, kit.List2Ints(sortList(head)), "输入:%v", tt)
 	}
 }
 
@@ -35,7 +37,7 @@ func Test_sortList(t *testing.T) {
 // 2. 参数-benchmem，性能测试时显示测试函数的内存分配大小，内存分配次数的统计信息
 // 3. 参数-count n，运行测试和性能多少此，默认1
 func Benchmark_sortList(b *testing.B) {
-	head := Ints2List([]int{9, -1, 3, 1, 4, 8, 2, 5, 7, 19, 16, 13, 11, 14, 18, 12, 15, 17, 29, 26, 23, 21, 24, 28, 22, 0, 100, 999})
+	head := kit.Ints2List([]int{9, -1, 3, 1, 4, 8, 2, 5, 7, 19, 16, 13, 11, 14, 18, 12, 15, 17, 29, 26, 23, 21, 24, 28, 22, 0, 100, 999})
 	b.Logf("~~~~~%v~~~~~", b.N)
 	for i := 0; i < b.N; i++ {
 		sortList(head)

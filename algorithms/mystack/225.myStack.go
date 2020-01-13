@@ -2,20 +2,19 @@ package mystack
 
 import (
 	_ "fmt"
-	"gopl.io/interview2020/Leetcode/algorithms/myqueue"
-)
 
-var NULL = -1 << 63
+	"gopl.io/interview2020/Leetcode/algorithms/kit"
+)
 
 // MyStack Declare
 type MyStack struct {
-	queue *myqueue.Queue
+	queue *Queue
 }
 
 // NewMyStack Constructor
 func NewMyStack() *MyStack {
 	return &MyStack{
-		queue: myqueue.NewQueue(),
+		queue: kit.NewQueue(),
 	}
 }
 

@@ -1,9 +1,8 @@
 package myheap
 
-import (
-	"testing"
-)
+import "testing"
 
+// run: go test -v base.go demo*
 func Test_maxHeapDemo(t *testing.T) {
 	max, res := maxHeapDemo()
 	t.Logf("max:%v res:%v\n", max, res)

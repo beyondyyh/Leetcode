@@ -1,4 +1,4 @@
-package myheap
+package kit
 
 // 最大堆
 type MaxHeap []int

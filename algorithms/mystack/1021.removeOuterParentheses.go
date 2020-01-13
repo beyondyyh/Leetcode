@@ -1,9 +1,11 @@
 package mystack
 
+import "gopl.io/interview2020/Leetcode/algorithms/kit"
+
 // removeOuterParentheses remove the outer parentheses of S
 func removeOuterParentheses(S string) string {
 	var res string
-	stack := NewStack()
+	stack := kit.NewStack()
 	for _, c := range S {
 		if c == ')' {
 			stack.Pop()
