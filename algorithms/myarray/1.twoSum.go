@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package myarray
 
 func twoSum(nums []int, target int) []int {
 	hash := make(map[int]int)
@@ -12,10 +10,4 @@ func twoSum(nums []int, target int) []int {
 		hash[v] = k
 	}
 	return []int{}
-}
-
-func main() {
-	nums := []int{2, 7, 11, 15}
-	target := 9
-	fmt.Println(twoSum(nums, target))
 }

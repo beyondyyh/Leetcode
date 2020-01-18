@@ -1,7 +1,8 @@
-package main
+package myarray
 
 import "testing"
 
+// run: go test -v 121.*
 func Test_maxProfit(t *testing.T) {
 	tests := []struct {
 		name     string
@@ -21,7 +22,7 @@ func Test_maxProfit(t *testing.T) {
 		{
 			name:     "x3",
 			input:    []int{10, 2, 9, 1, 2, 1, 3, 1},
-			expected: 3,
+			expected: 7,
 		},
 	}
 

@@ -1,4 +1,4 @@
-package main
+package myarray
 
 // 双指针法
 func maxArea(height []int) int {

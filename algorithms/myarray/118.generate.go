@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package myarray
 
 func generate(numRows int) [][]int {
 	if numRows <= 0 {
@@ -20,7 +18,7 @@ func generate(numRows int) [][]int {
 	return arr
 }
 
-func main() {
-	fmt.Println(generate(5))
-	// out: [[1] [1 1] [1 2 1] [1 3 3 1] [1 4 6 4 1]]
-}
+// func main() {
+// 	fmt.Println(generate(5))
+// 	// out: [[1] [1 1] [1 2 1] [1 3 3 1] [1 4 6 4 1]]
+// }
