@@ -1,7 +1,6 @@
 package myarray
 
 import (
-	_ "fmt"
 	"sort"
 )
 

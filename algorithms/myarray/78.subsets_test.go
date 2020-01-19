@@ -58,7 +58,7 @@ func Test_subsets(t *testing.T) {
 
 func sortSlice(iss [][]int) {
 	// 每个二维数组排序
-	for i, _ := range iss {
+	for i := range iss {
 		sort.Ints(iss[i])
 	}
 
