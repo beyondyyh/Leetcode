@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package myarray
 
 func fibnacci(N int) int {
 	x, y := 0, 1
@@ -8,8 +6,4 @@ func fibnacci(N int) int {
 		x, y = y, x+y
 	}
 	return x
-}
-
-func main() {
-	fmt.Println(fibnacci(10)) // 55
 }

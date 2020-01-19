@@ -1,11 +1,11 @@
-package main
+package myarray
 
 import "fmt"
 
-func main() {
-	arr := []int{1, 2, 2, 3, 4, 5, 10, 9, 8, 3, 3, 3, 3, 2, 1}
-	fmt.Println(getMax(arr)) // 10
-}
+// func main() {
+// 	arr := []int{1, 2, 2, 3, 4, 5, 10, 9, 8, 3, 3, 3, 3, 2, 1}
+// 	fmt.Println(getMax(arr)) // 10
+// }
 
 func getMax(arr []int) int {
 	l := len(arr)

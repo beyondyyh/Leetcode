@@ -1,25 +1,15 @@
-package main
-
-import (
-	"fmt"
-)
-
-func main() {
-	nums := []int{-2, 3, -1, 1, -3}
-	// nums := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
-	fmt.Println(maxSubArray(nums))
-}
+package myarray
 
 func maxSubArray(nums []int) int {
-	var ans int = nums[0]
-	var sum int = 0
-	for i, num := range nums {
+	var ans = nums[0]
+	var sum int
+	for _, num := range nums {
 		if sum > 0 {
 			sum += num
 		} else {
 			sum = num
 		}
-		fmt.Printf("i:%d num:%d sum:%d ans:%d\n", i, num, sum, ans)
+		// fmt.Printf("i:%d num:%d sum:%d ans:%d\n", i, num, sum, ans)
 
 		if sum > ans {
 			ans = sum

@@ -1,12 +1,6 @@
-package main
+package myarray
 
 import "fmt"
-
-func main() {
-	nums := []int{5, 7, 7, 8, 8, 10}
-	target := 3
-	fmt.Println(searchRange(nums, target))
-}
 
 func searchRange(nums []int, target int) []int {
 	return []int{

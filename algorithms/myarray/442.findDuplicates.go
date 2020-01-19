@@ -1,4 +1,4 @@
-package main
+package myarray
 
 import (
 	"fmt"
@@ -11,16 +11,12 @@ import (
 你可以不用到任何额外空间并在O(n)时间复杂度内解决这个问题吗？
 */
 
-func main() {
-	arr := []int{4, 3, 2, 7, 8, 2, 3, 1}
-	fmt.Println(findDuplicates(arr))
-}
-
 // 关键点：1 <= a[i] <= n，n为数组长度，所以a[i]可以转换为数组下标~~~~~
 // 在输入的数组中用数字的正负数来标识该位置所对应的数字是否已经出现过；
 // 遍历数组，对对应位置的数字取相反数，如果已经是负数则说明前面出现过了。
 func findDuplicates(arr []int) []int {
-	var res []int
+	// var res []int // default: []int(nil)
+	var res = make([]int, 0) // default: []int{}
 	for i := 0; i < len(arr); i++ {
 		num := int(math.Abs(float64(arr[i])))
 		if arr[num-1] > 0 {

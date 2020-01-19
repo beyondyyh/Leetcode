@@ -7,7 +7,7 @@ func arraysIntersection(nums1 []int, nums2 []int, nums3 []int) []int {
 		x      = 0
 		y      = 0
 		z      = 0
-		result []int
+		result = make([]int, 0)
 	)
 
 	for x < len(nums1) && y < len(nums2) && z < len(nums3) {
