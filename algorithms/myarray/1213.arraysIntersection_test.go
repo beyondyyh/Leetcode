@@ -35,7 +35,7 @@ func Test_arraysIntersection(t *testing.T) {
 	for _, tt := range cases {
 		t.Run(tt.Name, func(t *testing.T) {
 			input := tt.Input.([][]int)
-			assert.Equal(arraysIntersection(input[0], input[1], input[2]), tt.Expected.([]int))
+			assert.Equal(tt.Expected.([]int), arraysIntersection(input[0], input[1], input[2]))
 		})
 	}
 }
