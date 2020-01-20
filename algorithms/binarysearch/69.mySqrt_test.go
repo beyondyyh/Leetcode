@@ -1,26 +1,25 @@
 package binarysearch
 
-import "testing"
+import (
+	"testing"
+
+	"Leetcode/algorithms/kit"
+)
 
 // run: go test -v 69.*
 func Test_mySqrt(t *testing.T) {
-	cases := []struct {
-		name            string
-		input, expected int
-	}{
-		{"x0", 1, 1},
-		{"x1", 2, 1},
-		{"x2", 4, 2},
-		{"x3", 5, 2},
-		{"x4", 8, 2},
-		{"x5", 9, 3},
-		{"x6", 100, 10},
+	cases := []kit.CaseEntry{
+		{
+			Name:     "x1",
+			Input:    1,
+			Expected: 1,
+		},
 	}
 
 	for _, tt := range cases {
-		t.Run(tt.name, func(t *testing.T) {
-			if output := mySqrt(tt.input); output != tt.expected {
-				t.Errorf("mySqrt(%d)=%d, expected=%d", tt.input, output, tt.expected)
+		t.Run(tt.Name, func(t *testing.T) {
+			if output := mySqrt(tt.Input.(int)); output != tt.Expected.(int) {
+				t.Errorf("mySqrt(%d)=%d, expected=%d", tt.Input, output, tt.Expected)
 			}
 		})
 	}

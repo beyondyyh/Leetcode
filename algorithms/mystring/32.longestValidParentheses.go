@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math"
 
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 // 此处默认s只包含 '(' 和 ')'

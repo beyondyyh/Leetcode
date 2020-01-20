@@ -3,7 +3,7 @@ package tree
 import (
 	_ "fmt"
 
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 // postorderTraversal 基于栈的后序遍历

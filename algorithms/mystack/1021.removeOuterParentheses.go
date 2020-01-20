@@ -1,6 +1,6 @@
 package mystack
 
-import "gopl.io/interview2020/Leetcode/algorithms/kit"
+import "Leetcode/algorithms/kit"
 
 // removeOuterParentheses remove the outer parentheses of S
 func removeOuterParentheses(S string) string {

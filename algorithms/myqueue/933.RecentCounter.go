@@ -1,7 +1,7 @@
 package myqueue
 
 import (
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 // 题目：最近的请求次数 https://leetcode-cn.com/problems/number-of-recent-calls/

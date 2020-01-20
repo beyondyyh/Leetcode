@@ -3,7 +3,7 @@ package myarray
 import (
 	"testing"
 
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 type entry33input struct {

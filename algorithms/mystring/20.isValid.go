@@ -1,6 +1,6 @@
 package mystring
 
-import "gopl.io/interview2020/Leetcode/algorithms/kit"
+import "Leetcode/algorithms/kit"
 
 // isValid1 based on stack
 func isValid1(s string) bool { // {{{

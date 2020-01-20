@@ -1,6 +1,6 @@
 package mystack
 
-import "gopl.io/interview2020/Leetcode/algorithms/kit"
+import "Leetcode/algorithms/kit"
 
 // https://leetcode-cn.com/problems/binary-search-tree-iterator/
 //		7

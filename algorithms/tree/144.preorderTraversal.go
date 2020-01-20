@@ -1,6 +1,6 @@
 package tree
 
-import "gopl.io/interview2020/Leetcode/algorithms/kit"
+import "Leetcode/algorithms/kit"
 
 // preorderTraversal 基于栈的前序遍历
 // 前序遍历顺序：根->左->右，在遍历左、右子树时，仍然先访问根结点，然后遍历左子树，最后遍历右子树

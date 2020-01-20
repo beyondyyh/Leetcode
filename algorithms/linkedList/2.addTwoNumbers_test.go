@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 // run: go test -v base.go 2.*

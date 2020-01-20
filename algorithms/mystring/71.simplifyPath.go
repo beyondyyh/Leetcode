@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 // 1. 用栈

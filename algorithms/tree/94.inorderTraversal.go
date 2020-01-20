@@ -1,7 +1,7 @@
 package tree
 
 import (
-	"gopl.io/interview2020/Leetcode/algorithms/mystack"
+	"Leetcode/algorithms/kit"
 )
 
 // inorderTraversal 基于栈的中序遍历
@@ -19,7 +19,7 @@ func inorderTraversal(root *TreeNode) []int {
 		return res
 	}
 
-	stack := mystack.NewStack()
+	stack := kit.NewStack()
 	for root != nil || !stack.IsEmpty() {
 		for root != nil {
 			stack.Push(root)

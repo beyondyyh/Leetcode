@@ -3,7 +3,7 @@ package linkedList
 import (
 	"fmt"
 
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 func reverseList(head *ListNode) *ListNode {

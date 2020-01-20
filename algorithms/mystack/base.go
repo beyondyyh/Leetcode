@@ -1,7 +1,7 @@
 package mystack
 
 import (
-	"gopl.io/interview2020/Leetcode/algorithms/kit"
+	"Leetcode/algorithms/kit"
 )
 
 var NULL = kit.NULL
