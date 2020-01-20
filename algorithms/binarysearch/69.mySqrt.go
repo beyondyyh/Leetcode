@@ -1,7 +1,5 @@
 package binarysearch
 
-import _ "fmt"
-
 func mySqrt(x int) int {
 	left, right := 0, x
 	for left < right {

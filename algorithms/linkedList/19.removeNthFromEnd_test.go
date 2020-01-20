@@ -19,6 +19,7 @@ type (
 	}
 )
 
+// go test -v base.go 19.*
 func build_removeNthFromEnd_case() []entry19 {
 	cases := []entry19{
 		{
