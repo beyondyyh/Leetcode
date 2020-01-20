@@ -47,6 +47,7 @@
 |0234|[回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/solution/)|[go](./linkedList/234.isPalindrome.go)|S|
 |0237|[删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[go](./linkedList/237.deleteNode.go)|S|
 |0287|[寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)|[go](./myarray/287.findDuplicate.go)|M|
+|0331|[验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[go](./tree/331.isValidSerialization.go)|M|
 |0344|[反转字符串](https://leetcode-cn.com/problems/reverse-string/)|[go](./mystring/344.reverseString.go)|S|
 |0347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|[go](./myheap/347.topkFrequent.go)|M|
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./myarray/442.findDuplicates.go)|M|
