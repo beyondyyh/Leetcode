@@ -8,7 +8,6 @@ func mySqrt(x int) int {
 		// 每次mid取值为(l + r + 1) / 2
 		// 这是为了防止当l = r - 1时，出现死循环的情况
 		mid := (left + right + 1) >> 1
-		// fmt.Printf("l:%d r:%d mid:%d\n", left, right, mid)
 		if mid*mid <= x {
 			left = mid
 		} else {

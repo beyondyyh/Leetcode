@@ -24,13 +24,17 @@ func Test_isValidSerialization(t *testing.T) {
 			Input:    "9,#,#,1",
 			Expected: false,
 		},
-		// more test case
+		// add more test cases
 	}
 
 	for _, tt := range cases {
 		t.Run(tt.Name, func(t *testing.T) {
-			if output := isValidSerialization(tt.Input.(string)); output != tt.Expected.(bool) {
-				t.Errorf("isValidSerialization(%s)=%t, expected=%t", tt.Input, output, tt.Expected.(bool))
+			if output := isValidSerialization1(tt.Input.(string)); output != tt.Expected.(bool) {
+				t.Errorf("isValidSerialization1(%s)=%t, expected=%t", tt.Input, output, tt.Expected.(bool))
+			}
+
+			if output := isValidSerialization2(tt.Input.(string)); output != tt.Expected.(bool) {
+				t.Errorf("isValidSerialization2(%s)=%t, expected=%t", tt.Input, output, tt.Expected.(bool))
 			}
 		})
 	}
