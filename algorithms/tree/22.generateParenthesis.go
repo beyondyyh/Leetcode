@@ -1,7 +1,5 @@
 package tree
 
-import _ "fmt"
-
 func generateParenthesis(n int) []string {
 	var res []string
 	if n == 0 {
