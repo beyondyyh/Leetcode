@@ -13,8 +13,8 @@ type entry145 struct {
 	expected []int
 }
 
-// build_postorderTraversal_case returns test cases
-func build_postorderTraversal_case() []entry145 {
+// buildPostorderTraversalCase returns test cases
+func buildPostorderTraversalCase() []entry145 {
 	cases := []entry145{
 		{
 			name:     "x0",
@@ -42,7 +42,7 @@ func build_postorderTraversal_case() []entry145 {
 
 // run: go test -v base.go 145.*
 func Test_postorderTraversal(t *testing.T) {
-	for _, tt := range build_postorderTraversal_case() {
+	for _, tt := range buildPostorderTraversalCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			root := kit.Ints2Tree(tt.input)
 			if output := postorderTraversal(root); !reflect.DeepEqual(output, tt.expected) {
@@ -53,7 +53,7 @@ func Test_postorderTraversal(t *testing.T) {
 }
 
 func Test_Tree2Postorder(t *testing.T) {
-	for _, tt := range build_postorderTraversal_case() {
+	for _, tt := range buildPostorderTraversalCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			root := kit.Ints2Tree(tt.input)
 			if output := kit.Tree2Postorder(root); !reflect.DeepEqual(output, tt.expected) {

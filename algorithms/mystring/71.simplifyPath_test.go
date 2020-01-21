@@ -8,8 +8,8 @@ type entry71 struct {
 	expected string
 }
 
-// build_simplifyPath_case return test cases
-func build_simplifyPath_case() []entry71 {
+// build_simplifyPathCase return test cases
+func build_simplifyPathCase() []entry71 {
 	cases := []entry71{
 		{
 			name:     "x1",
@@ -42,7 +42,7 @@ func build_simplifyPath_case() []entry71 {
 
 // run: go test -v 71.*
 func Test_simplifyPath(t *testing.T) {
-	for _, tt := range build_simplifyPath_case() {
+	for _, tt := range build_simplifyPathCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			if output := simplifyPath(tt.input); output != tt.expected {
 				t.Errorf("simplifyPath(%s)=%s, expected=%s", tt.input, output, tt.expected)
@@ -52,7 +52,7 @@ func Test_simplifyPath(t *testing.T) {
 }
 
 func Test_cleanFilepath(t *testing.T) {
-	for _, tt := range build_simplifyPath_case() {
+	for _, tt := range build_simplifyPathCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			if output := cleanFilepath(tt.input); output != tt.expected {
 				t.Errorf("cleanFilepath(%s)=%s, expected=%s", tt.input, output, tt.expected)

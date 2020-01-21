@@ -55,6 +55,7 @@ func levelOrder1(root *TreeNode) [][]int { // {{{
 	return res
 } // }}}
 
+// 递归大法
 func levelOrder2(root *TreeNode) [][]int {
 	var res [][]int
 	var dfs func(*TreeNode, int)

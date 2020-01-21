@@ -20,7 +20,7 @@ type (
 )
 
 // go test -v base.go 19.*
-func build_removeNthFromEnd_case() []entry19 {
+func build_removeNthFromEndCase() []entry19 {
 	cases := []entry19{
 		{
 			name: "x1",
@@ -52,7 +52,7 @@ func build_removeNthFromEnd_case() []entry19 {
 
 // run: go test -v base.go 19.*
 func Test_removeNthFromEnd1(t *testing.T) {
-	for _, tt := range build_removeNthFromEnd_case() {
+	for _, tt := range build_removeNthFromEndCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			head := kit.Ints2List(tt.input.ints)
 			output := removeNthFromEnd1(head, tt.input.n)
@@ -65,7 +65,7 @@ func Test_removeNthFromEnd1(t *testing.T) {
 }
 
 func Test_removeNthFromEnd2(t *testing.T) {
-	for _, tt := range build_removeNthFromEnd_case() {
+	for _, tt := range build_removeNthFromEndCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			head := kit.Ints2List(tt.input.ints)
 			output := removeNthFromEnd2(head, tt.input.n)

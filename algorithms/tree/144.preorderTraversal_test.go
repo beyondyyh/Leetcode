@@ -13,7 +13,7 @@ type entry144 struct {
 	expected []int
 }
 
-func build_preorderTraversal_case() []entry144 {
+func buildPreorderTraversalCase() []entry144 {
 	cases := []entry144{
 		{
 			name:     "x1",
@@ -36,7 +36,7 @@ func build_preorderTraversal_case() []entry144 {
 
 // run: go test -v base.go 144.*
 func Test_preorderTraversal(t *testing.T) {
-	for _, tt := range build_preorderTraversal_case() {
+	for _, tt := range buildPreorderTraversalCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			root := kit.Ints2Tree(tt.input)
 			if output := preorderTraversal(root); !reflect.DeepEqual(output, tt.expected) {
@@ -47,7 +47,7 @@ func Test_preorderTraversal(t *testing.T) {
 }
 
 func Test_Tree2Preorder(t *testing.T) {
-	for _, tt := range build_preorderTraversal_case() {
+	for _, tt := range buildPreorderTraversalCase() {
 		t.Run(tt.name, func(t *testing.T) {
 			root := kit.Ints2Tree(tt.input)
 			if output := kit.Tree2Preorder(root); !reflect.DeepEqual(output, tt.expected) {

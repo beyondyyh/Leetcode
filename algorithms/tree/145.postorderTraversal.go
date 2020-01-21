@@ -1,8 +1,6 @@
 package tree
 
 import (
-	_ "fmt"
-
 	"Leetcode/algorithms/kit"
 )
 
