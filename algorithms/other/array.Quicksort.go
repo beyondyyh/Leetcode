@@ -1,8 +1,8 @@
-package main
+package other
 
 import "fmt"
 
-// 快排，会延伸很多变种
+// QuickSort 快排，会延伸很多变种
 func QuickSort(data []int) []int {
 	if len(data) <= 1 {
 		return data
@@ -28,8 +28,8 @@ func QuickSort(data []int) []int {
 	return data
 }
 
-func main() {
-	nums := []int{8, 9, 1, 3, 2, 0, 7, 11}
-	fmt.Printf("befort: %v\n", nums)
-	fmt.Printf("after: %v\n", QuickSort(nums))
-}
+// func main() {
+// 	nums := []int{8, 9, 1, 3, 2, 0, 7, 11}
+// 	fmt.Printf("befort: %v\n", nums)
+// 	fmt.Printf("after: %v\n", QuickSort(nums))
+// }

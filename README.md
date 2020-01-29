@@ -10,8 +10,6 @@
 Tests
 
 ```shell
-go test -run regexp
-    Run only those tests and examples matching the regular expression.
-    
-go test -run $GOPATH/src/gopl.io/interview2020/Leetcode/algorithms/my*
+cd yourpath/Leetcode
+sh test.sh
 ```

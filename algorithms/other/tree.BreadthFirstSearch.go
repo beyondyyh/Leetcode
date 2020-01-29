@@ -1,12 +1,13 @@
-package main
+package other
 
+// TreeNode declare
 type TreeNode struct {
 	Data  interface{}
 	Left  *TreeNode
 	Right *TreeNode
 }
 
-// 广度优先遍历
+// BreadthFirstSearch 广度优先遍历
 func BreadthFirstSearch(root TreeNode) []interface{} {
 	var res []interface{}
 	var nodes []TreeNode = []TreeNode{root}

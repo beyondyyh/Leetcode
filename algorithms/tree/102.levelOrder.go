@@ -28,11 +28,11 @@ func BFS(root *TreeNode) []int { // {{{
 // 2. 如果根据等级来保存[][]int的话 只要声明一个正在遍历的队列 一个保存下一层节点的队列即可
 func levelOrder1(root *TreeNode) [][]int { // {{{
 	var res [][]int
-	var queue []*TreeNode = []*TreeNode{root}
 	if root == nil {
 		return res
 	}
 
+	var queue []*TreeNode = []*TreeNode{root}
 	for len(queue) > 0 {
 		var tmpQueue []*TreeNode
 		var tmpRes []int
@@ -52,6 +52,7 @@ func levelOrder1(root *TreeNode) [][]int { // {{{
 		queue = append(queue, tmpQueue...)
 		res = append(res, tmpRes)
 	}
+
 	return res
 } // }}}
 

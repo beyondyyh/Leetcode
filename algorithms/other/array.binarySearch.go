@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package other
 
 // 二分查找
 func binarySearch(nums []int, target int) bool {
@@ -19,7 +17,7 @@ func binarySearch(nums []int, target int) bool {
 	return false
 }
 
-func main() {
-	nums := []int{-1, 0, 1, 2, 3, 4, 5, 10, 11, 19}
-	fmt.Println(binarySearch(nums, 1))
-}
+// func main() {
+// 	nums := []int{-1, 0, 1, 2, 3, 4, 5, 10, 11, 19}
+// 	fmt.Println(binarySearch(nums, 1))
+// }
