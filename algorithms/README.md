@@ -31,7 +31,7 @@
 |0104|[二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)|[go](./tree/104.maxDepth.go)|S|
 |0118|[杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)|[go](./myarray/118.generate.go)|S|
 |0121|[买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)|[go](./myarray/121.maxProfit.go)|S|
-|0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./bit/136.singleNumber.go)|S|
+|0136|[只出现一次的数字](https://leetcode-cn.com/problems/single-number/comments/)|[go](./mybit/136.singleNumber.go)|S|
 |0141|[环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)|[go](./linkedList/141.hasCycle.go)|S|
 |0144|[二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)|[go](./tree/144.preorderTraversal.go)|M|
 |0145|[二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)|[go](./tree/145.postorderTraversal.go)|H|
