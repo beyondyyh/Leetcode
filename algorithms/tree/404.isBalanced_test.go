@@ -11,7 +11,7 @@ func Test_isBalanced(t *testing.T) {
 	cases := []kit.CaseEntry{
 		{
 			Name:     "x1",
-			Input:    []int{3, 9, 20, null, null, 15, 7, 1},
+			Input:    []int{3, 9, 20, null, null, 15, 7},
 			Expected: true,
 		},
 		{
