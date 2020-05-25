@@ -104,3 +104,17 @@ func Tree2Postorder(root *TreeNode) []int { // {{{
 	res = append(res, root.Val)
 	return res
 } // }}}
+
+// FindTargetNode 返回 Val = target 的 TreeNode
+// 假设root中一定有 node.Val = target
+func FindTargetNode(root *TreeNode, target int) *TreeNode {
+	if root == nil || root.Val == target {
+		return root
+	}
+
+	if res := FindTargetNode(root.Left, target); res != nil {
+		return res
+	}
+
+	return FindTargetNode(root.Right, target)
+}

@@ -53,6 +53,8 @@
 |0331|[验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/)|[go](./tree/331.isValidSerialization.go)|M|
 |0344|[反转字符串](https://leetcode-cn.com/problems/reverse-string/)|[go](./mystring/344.reverseString.go)|S|
 |0347|[前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)|[go](./myheap/347.topkFrequent.go)|M|
+|0404|[检查平衡性](https://leetcode-cn.com/problems/check-balance-lcci/)|[go](./tree/404.isBalanced.go)|S|
+|0408|[首个共同祖先](https://leetcode-cn.com/problems/first-common-ancestor-lcci/)|[go](./tree/408.lowestCommonAncestor.go)|M|
 |0412|[Fizz Buzz](https://leetcode-cn.com/problems/fizz-buzz/)|[go](./mystring/412.fizzBuzz.go)|S|
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./myarray/442.findDuplicates.go)|M|
 |0468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/submissions/)|[go](./mystring/468.validIPAddress.go)|M|
