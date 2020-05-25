@@ -11,22 +11,22 @@ type TreeNode struct {
 var NULL = -1 << 63
 
 // BreadthFirstSearch 层级遍历
-func BreadthFirstSearch(root TreeNode) []interface{} { // {{{
-	if &root == nil {
+func BreadthFirstSearch(root *TreeNode) []interface{} { // {{{
+	if root == nil {
 		return nil
 	}
 
 	var res []interface{}
-	var nodes []TreeNode = []TreeNode{root}
+	var nodes []*TreeNode = []*TreeNode{root}
 	for len(nodes) > 0 {
 		node := nodes[0]
 		nodes = nodes[1:]
 		res = append(res, node.Val)
 		if node.Left != nil {
-			nodes = append(nodes, *node.Left)
+			nodes = append(nodes, node.Left)
 		}
 		if node.Right != nil {
-			nodes = append(nodes, *node.Right)
+			nodes = append(nodes, node.Right)
 		}
 	}
 	return res

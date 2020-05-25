@@ -31,7 +31,7 @@ func Test_mergeTrees(t *testing.T) {
 			t1 := kit.Ints2Tree(tt.input[0])
 			t2 := kit.Ints2Tree(tt.input[1])
 			output := mergeTrees(t1, t2)
-			out2ints := kit.BreadthFirstSearch(*output)
+			out2ints := kit.BreadthFirstSearch(output)
 			if !reflect.DeepEqual(out2ints, tt.expected) {
 				t.Errorf("mergeTrees(%v)=%v, expected=%v", tt.input, out2ints, tt.expected)
 			}

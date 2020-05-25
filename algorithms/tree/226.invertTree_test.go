@@ -29,7 +29,7 @@ func Test_invertTree(t *testing.T) {
 	for _, tt := range cases {
 		t.Run(tt.name, func(t *testing.T) {
 			output := invertTree(kit.Ints2Tree(tt.input))
-			out2ints := kit.BreadthFirstSearch(*output)
+			out2ints := kit.BreadthFirstSearch(output)
 			if !reflect.DeepEqual(out2ints, tt.expected) {
 				t.Errorf("invertTree(%v)=%v, expected=%v", tt.input, out2ints, tt.expected)
 			}

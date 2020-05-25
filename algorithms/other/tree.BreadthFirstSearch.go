@@ -8,18 +8,18 @@ type TreeNode struct {
 }
 
 // BreadthFirstSearch 广度优先遍历
-func BreadthFirstSearch(root TreeNode) []interface{} {
+func BreadthFirstSearch(root *TreeNode) []interface{} {
 	var res []interface{}
-	var nodes []TreeNode = []TreeNode{root}
+	var nodes []*TreeNode = []*TreeNode{root}
 	for len(nodes) > 0 {
 		node := nodes[0]
 		nodes = nodes[1:]
 		res = append(res, node.Data)
 		if node.Left != nil {
-			nodes = append(nodes, *node.Left)
+			nodes = append(nodes, node.Left)
 		}
 		if node.Right != nil {
-			nodes = append(nodes, *node.Right)
+			nodes = append(nodes, node.Right)
 		}
 	}
 	return res
