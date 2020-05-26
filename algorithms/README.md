@@ -59,6 +59,7 @@
 |0442|[数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)|[go](./myarray/442.findDuplicates.go)|M|
 |0468|[验证IP地址](https://leetcode-cn.com/problems/validate-ip-address/submissions/)|[go](./mystring/468.validIPAddress.go)|M|
 |0509|[斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)|[go](./myarray/509.fibnacci.go)|S|
+|0530|[二叉搜索树的最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/)|[go](./tree/530.getMinimumDifference.go)|S|
 |0617|[合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees/)|[go](./tree/617.mergeTrees.go)|S|
 |0622|[设计循环队列](https://leetcode-cn.com/problems/design-circular-queue/)|[go](./myqueue/622.MyCircularQueue.go)|M|
 |0641|[设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/)|[go](./myqueue/641.MyCircularDequeBasedOnDLinkedList.go)|M|

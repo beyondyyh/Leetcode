@@ -11,6 +11,7 @@ type TreeNode struct {
 var NULL = -1 << 63
 
 // BreadthFirstSearch 层级遍历
+// BFS：广度优先遍历
 func BreadthFirstSearch(root *TreeNode) []interface{} { // {{{
 	if root == nil {
 		return nil
@@ -64,6 +65,7 @@ func Ints2Tree(ints []int) *TreeNode { // {{{
 } // }}}
 
 // Tree2Inorder 把 二叉树转换成 inorder 的切片
+// DFS：中序遍历
 // 递归大法 顺序：左->根->右
 func Tree2Inorder(root *TreeNode) []int { // {{{
 	var res []int
@@ -78,6 +80,7 @@ func Tree2Inorder(root *TreeNode) []int { // {{{
 } // }}}
 
 // Tree2Preorder 把 二叉树转换成 preorder 的切片
+// DFS：前序遍历
 // 递归大法 顺序：根->左->右
 func Tree2Preorder(root *TreeNode) []int { // {{{
 	var res []int
@@ -92,6 +95,7 @@ func Tree2Preorder(root *TreeNode) []int { // {{{
 } // }}}
 
 // Tree2Postorder 把 二叉树转换成 postorder 的切片
+// DFS：后序遍历
 // 递归大法 顺序：左->右->根
 func Tree2Postorder(root *TreeNode) []int { // {{{
 	var res []int
