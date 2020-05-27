@@ -3,9 +3,9 @@ package mystack
 import (
 	"testing"
 
-	"Leetcode/algorithms/kit"
-
 	"github.com/stretchr/testify/assert"
+
+	"Leetcode/algorithms/kit"
 )
 
 // run: go test -v base.go 173.*

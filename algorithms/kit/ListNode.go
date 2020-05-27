@@ -12,12 +12,17 @@ func NewListNode(val int) *ListNode {
 
 // Ints2List convert []int to List
 func Ints2List(nums []int) *ListNode {
+	if len(nums) == 0 {
+		return nil
+	}
+
 	dummy := &ListNode{Val: -1}
 	curr := dummy
 	for _, num := range nums {
 		curr.Next = &ListNode{Val: num}
 		curr = curr.Next
 	}
+
 	return dummy.Next
 }
 

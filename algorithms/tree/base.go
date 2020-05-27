@@ -14,4 +14,5 @@ type TreeNode = kit.TreeNode
 // Stack ...
 type Stack = kit.Stack
 
-// var TreeNode = kit.TreeNode
+// ListNode
+type ListNode = kit.ListNode

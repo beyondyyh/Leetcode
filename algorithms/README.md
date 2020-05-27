@@ -40,7 +40,7 @@
 |0148|[排序链表](https://leetcode-cn.com/problems/sort-list/)|[go](./linkedList/148.sortList.go)|M|
 |0155|[最小栈](https://leetcode-cn.com/problems/min-stack/)|[go](./mystack/155.minStack.go)|S|
 |0171|[Excel表列序号](https://leetcode-cn.com/problems/excel-sheet-column-number/)|[go](./mystring/171.titleToNumber.go)|S|
-|0173|[二叉搜索树迭代器](https://leetcode-cn.com/problems/binary-search-tree-iterator/)|[go](./mystack/173.BSTIterator.go)|M|
+|0173|[二叉搜索树迭代器](https://leetcode-cn.com/problems/binary-search-tree-iterator/)|[go](./tree/173.BSTIterator.go) [go](./mystack/173.BSTIterator.go)|M|
 |0206|[反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)|[go](./linkedList/206.reverseList.go)|S|
 |0208|[实现 Trie (前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|[go](./trie/208.trie.go)|M|
 |0215|[数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)|[go](./myheap/215.findKthLargest.go)|M|
@@ -67,4 +67,5 @@
 |1021|[删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses/)|[go](./mystack/1021.removeOuterParentheses.go)|S|
 |1108|[地址无效化](https://leetcode-cn.com/problems/defanging-an-ip-address/)|[go](./mystring/1108.defangIPaddr.go)|S|
 |1213|[三个有序数组的交集](https://leetcode-cn.com/problems/intersection-of-three-sorted-arrays/)|[go](./myarray/1213.arraysIntersection.go)|S|
+|1367|[二叉树中的列表](https://leetcode-cn.com/problems/linked-list-in-binary-tree/)|[go](./tree/1367.isSubPath.go)|M|
 ||||[:top:](#Top)|
