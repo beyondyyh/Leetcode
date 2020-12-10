@@ -24,6 +24,7 @@
 |0069|[x 的平方根](https://leetcode-cn.com/problems/sqrtx/)|[go](./binarysearch/69.mySqrt.go)|S|
 |0071|[简化路径](https://leetcode-cn.com/problems/simplify-path/)|[go](./mystring/71.simplifyPath.go)|M|
 |0078|[子集](https://leetcode-cn.com/problems/subsets/)|[go](./myarray/78.subsets.go)|M|
+|0092|[子集反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)|[go](./linkedList/92.reverseBetween.go)|M|
 |0093|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/submissions/)|[go](./mystring/93.restoreIpAddresses.go)|M|
 |0094|[二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)|[go](./tree/94.inorderTraversal.go)|M|
 |0101|[对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/submissions/)|[go](./tree/101.isSymmetric.go)|S|
