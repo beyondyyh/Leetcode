@@ -4,7 +4,7 @@ package other
 func binarySearch(nums []int, target int) bool {
 	l := len(nums)
 	left, right := 0, l-1
-	for left < right {
+	for left <= right {
 		mid := (left + right) >> 1
 		if nums[mid] == target {
 			return true

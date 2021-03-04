@@ -19,6 +19,11 @@ func Test_addTwoNumbers(t *testing.T) {
 			input:    [][]int{{2, 4, 3}, {5, 6, 4}},
 			expected: []int{7, 0, 8},
 		},
+		{
+			name:     "x2",
+			input:    [][]int{{9, 9, 9, 9, 9, 9, 9}, {9, 9, 9, 9}},
+			expected: []int{8, 9, 9, 9, 0, 0, 0, 1},
+		},
 	}
 
 	for _, tt := range cases {
