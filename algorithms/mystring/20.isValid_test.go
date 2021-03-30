@@ -25,6 +25,9 @@ func Test_isValid(t *testing.T) {
 			if output := isValid2(tt.input); output != tt.expected {
 				t.Errorf("isValid2(%s)=%t, expected=%t", tt.input, output, tt.expected)
 			}
+			if output := isValid3(tt.input); output != tt.expected {
+				t.Errorf("isValid3(%s)=%t, expected=%t", tt.input, output, tt.expected)
+			}
 		})
 	}
 }

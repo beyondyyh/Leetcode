@@ -1,9 +1,10 @@
 package offer100
 
 import (
-	"Leetcode/algorithms/kit"
 	"reflect"
 	"testing"
+
+	"Leetcode/algorithms/kit"
 )
 
 // run: go test -run Test_getKthFromEnd

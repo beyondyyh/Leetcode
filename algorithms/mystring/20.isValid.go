@@ -75,3 +75,30 @@ func isValid2(s string) bool {
 
 	return stack.IsEmpty()
 }
+
+// 遍历字符串，当遇到左括号时，先把右括号入栈，
+// 当遇到右括号时，如果此时栈为空则为无效，不为空则出栈一个元素(该元素应该是右括号才算匹配)与当前遍历到的元素对比是否相等，不相等说明肯定不匹配
+// 遍历结束判断栈是否为空
+func isValid3(s string) bool {
+	// 奇数长度，肯定不匹配
+	if len(s)%2 == 1 {
+		return false
+	}
+
+	stack := kit.NewStack()
+	for _, char := range s {
+		switch char {
+		case '(':
+			stack.Push(')')
+		case '[':
+			stack.Push(']')
+		case '{':
+			stack.Push('}')
+		default: // 说明有多余的括号
+			if stack.IsEmpty() || char != (stack.Pop()).(rune) {
+				return false
+			}
+		}
+	}
+	return stack.IsEmpty()
+}

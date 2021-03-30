@@ -69,7 +69,8 @@
 |1108|[地址无效化](https://leetcode-cn.com/problems/defanging-an-ip-address/)|[go](./mystring/1108.defangIPaddr.go)|S|
 |1213|[三个有序数组的交集](https://leetcode-cn.com/problems/intersection-of-three-sorted-arrays/)|[go](./myarray/1213.arraysIntersection.go)|S|
 |1367|[二叉树中的列表](https://leetcode-cn.com/problems/linked-list-in-binary-tree/)|[go](./tree/1367.isSubPath.go)|M|
-|-|-|-|-|
+|offer100||||
+|22|[链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|[go](./offer100/22.getKthFromEnd.go)|S|
+|40|[最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)|[go](./offer100/40.getLeastNumbers.go)|S|
 |58|[左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)|[go](./offer100/58.reverseLeftWords.go)|S|
-|22|[链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|[go](./offer100/22.getKthFromEnd.go)|S
 ||||[:top:](#Top)|
