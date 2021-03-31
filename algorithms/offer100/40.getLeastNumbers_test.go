@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-// run: go test -run -v Test_getLeastNumbers
+// run: go test -run Test_getLeastNumbers
 func Test_getLeastNumbers(t *testing.T) {
 	cases := []CaseEntry{
 		{

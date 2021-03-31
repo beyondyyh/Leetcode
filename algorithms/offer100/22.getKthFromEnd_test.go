@@ -22,7 +22,7 @@ func Test_getKthFromEnd(t *testing.T) {
 			Input: []interface{}{
 				[]int{1, 2, 3, 4, 5}, 4,
 			},
-			Expected: []int{1, 2, 3, 4, 5},
+			Expected: []int{2, 3, 4, 5},
 		},
 	}
 
