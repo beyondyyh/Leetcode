@@ -1,7 +1,7 @@
 # Algorithms
 
 | No. | Title | Go | <span id="Top">Difficulty</span> |
-|-----| ----- | -- | ---------- |
+|-----| ----- | -- | -------------------------------- |
 |0001|[两数之和](https://leetcode-cn.com/problems/two-sum/)|[go](./myarray/1.twoSum.go)|S|
 |0002|[两数相加](https://leetcode-cn.com/problems/add-two-numbers/)|[go](./linkedList/2.addTwoNumbers.go)|M|
 |0003|[无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)|[go](./mystring/3.lengthOfLongestSubstring.go)|M|
@@ -70,6 +70,7 @@
 |1213|[三个有序数组的交集](https://leetcode-cn.com/problems/intersection-of-three-sorted-arrays/)|[go](./myarray/1213.arraysIntersection.go)|S|
 |1367|[二叉树中的列表](https://leetcode-cn.com/problems/linked-list-in-binary-tree/)|[go](./tree/1367.isSubPath.go)|M|
 |offer100||||
+|04|[二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)|[go](./offer100/04.findNumberIn2DArray.go)|S|
 |22|[链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)|[go](./offer100/22.getKthFromEnd.go)|S|
 |40|[最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)|[go](./offer100/40.getLeastNumbers.go)|S|
 |58|[左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)|[go](./offer100/58.reverseLeftWords.go)|S|
