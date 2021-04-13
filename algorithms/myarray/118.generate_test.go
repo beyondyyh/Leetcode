@@ -15,18 +15,18 @@ func Test_generate(t *testing.T) {
 			Name:  "x1",
 			Input: 1,
 			Expected: [][]int{
-				[]int{1},
+				{1},
 			},
 		},
 		{
 			Name:  "x2",
 			Input: 5,
 			Expected: [][]int{
-				[]int{1},
-				[]int{1, 1},
-				[]int{1, 2, 1},
-				[]int{1, 3, 3, 1},
-				[]int{1, 4, 6, 4, 1},
+				{1},
+				{1, 1},
+				{1, 2, 1},
+				{1, 3, 3, 1},
+				{1, 4, 6, 4, 1},
 			},
 		},
 	}

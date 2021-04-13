@@ -21,18 +21,18 @@ func Test_subsets(t *testing.T) {
 		{
 			name:     "[1]",
 			input:    []int{1},
-			expected: [][]int{nil, []int{1}},
+			expected: [][]int{nil, {1}},
 		},
 		{
 			name:     "[1,2,3]",
 			input:    []int{1, 2, 3},
-			expected: [][]int{nil, []int{1}, []int{2}, []int{3}, []int{1, 2}, []int{1, 3}, []int{2, 3}, []int{1, 2, 3}},
+			expected: [][]int{nil, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}},
 		},
 		{
 			name:  "[9,0,3,5]",
 			input: []int{9, 0, 3, 5},
-			expected: [][]int{nil, []int{9}, []int{9, 0}, []int{9, 0, 3}, []int{9, 3}, []int{9, 0, 3, 5}, []int{9, 5}, []int{9, 0, 5},
-				[]int{9, 3, 5}, []int{0}, []int{0, 3}, []int{0, 3, 5}, []int{0, 5}, []int{3}, []int{3, 5}, []int{5}},
+			expected: [][]int{nil, {9}, {9, 0}, {9, 0, 3}, {9, 3}, {9, 0, 3, 5}, {9, 5}, {9, 0, 5},
+				{9, 3, 5}, {0}, {0, 3}, {0, 3, 5}, {0, 5}, {3}, {3, 5}, {5}},
 		},
 	}
 

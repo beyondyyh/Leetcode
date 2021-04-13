@@ -6,7 +6,7 @@ import (
 
 // run: go test -v 26.*
 func Test_removeDuplicates(t *testing.T) {
-	tests := []struct {
+	cases := []struct {
 		name     string
 		input    []int
 		expected int
@@ -23,10 +23,13 @@ func Test_removeDuplicates(t *testing.T) {
 		},
 	}
 
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := removeDuplicates(tt.input); got != tt.expected {
-				t.Errorf("removeDuplicates(%v)=%v, expected=%v", tt.input, got, tt.expected)
+	for _, c := range cases {
+		t.Run(c.name, func(t *testing.T) {
+			// if got := removeDuplicates1(c.input); got != c.expected {
+			// 	t.Errorf("removeDuplicates1(%v)=%v, expected=%v", c.input, got, c.expected)
+			// }
+			if got := removeDuplicates2(c.input); got != c.expected {
+				t.Errorf("removeDuplicates2(%v)=%v, expected=%v", c.input, got, c.expected)
 			}
 		})
 	}

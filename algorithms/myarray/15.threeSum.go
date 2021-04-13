@@ -1,8 +1,6 @@
 package myarray
 
-import (
-	"sort"
-)
+import "sort"
 
 func threeSum(nums []int) [][]int {
 	var res [][]int

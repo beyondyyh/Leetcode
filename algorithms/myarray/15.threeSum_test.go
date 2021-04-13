@@ -14,12 +14,12 @@ func Test_threeSum(t *testing.T) {
 		{
 			Name:     "x1",
 			Input:    []int{1, -1, -1, 0},
-			Expected: [][]int{[]int{-1, 0, 1}},
+			Expected: [][]int{{-1, 0, 1}},
 		},
 		{
 			Name:     "x2",
 			Input:    []int{-1, 0, 1, 2, -1, -4},
-			Expected: [][]int{[]int{-1, -1, 2}, []int{-1, 0, 1}},
+			Expected: [][]int{{-1, -1, 2}, {-1, 0, 1}},
 		},
 	}
 
