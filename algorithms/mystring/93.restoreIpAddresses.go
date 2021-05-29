@@ -7,7 +7,7 @@ import (
 
 // 暴力法，非常暴力，牛逼克拉斯
 func restoreIpAddresses(s string) []string {
-	var res []string
+	res := []string{}
 	for a := 1; a < 4; a++ {
 		for b := 1; b < 4; b++ {
 			for c := 1; c < 4; c++ {
@@ -18,9 +18,8 @@ func restoreIpAddresses(s string) []string {
 						n3, _ := strconv.Atoi(s[a+b : a+b+c])
 						n4, _ := strconv.Atoi(s[a+b+c:])
 						if n1 <= 255 && n2 <= 255 && n3 <= 255 && n4 <= 255 {
-							var arr []string
-							arr = append(arr, strconv.Itoa(n1), strconv.Itoa(n2), strconv.Itoa(n3), strconv.Itoa(n4))
-							IP := strings.Join(arr, ".")
+							segments := append([]string{}, strconv.Itoa(n1), strconv.Itoa(n2), strconv.Itoa(n3), strconv.Itoa(n4))
+							IP := strings.Join(segments, ".")
 							if len(IP) == len(s)+3 {
 								res = append(res, IP)
 							}
