@@ -85,17 +85,18 @@ func isValid3(s string) bool {
 		return false
 	}
 
+	dict := map[byte]byte{
+		'(': ')',
+		'[': ']',
+		'{': '}',
+	}
 	stack := kit.NewStack()
-	for _, char := range s {
+	for _, char := range []byte(s) {
 		switch char {
-		case '(':
-			stack.Push(')')
-		case '[':
-			stack.Push(']')
-		case '{':
-			stack.Push('}')
+		case '(', '[', '{':
+			stack.Push(dict[char])
 		default: // 说明有多余的括号
-			if stack.IsEmpty() || char != (stack.Pop()).(rune) {
+			if stack.IsEmpty() || char != (stack.Pop()).(byte) {
 				return false
 			}
 		}
