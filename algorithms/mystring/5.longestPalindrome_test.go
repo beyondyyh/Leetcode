@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-// run: go test -v 5.*
+// run: go test -v -run Test_longestPalindrome
 func Test_longestPalindrome(t *testing.T) {
 	cases := []struct {
 		name, input string

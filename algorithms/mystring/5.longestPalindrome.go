@@ -1,6 +1,8 @@
 package mystring
 
 // 1. 暴力解法: 列出子串, 筛选出长度最大值
+// 时间复杂度：O(n^3)
+// 空间复杂度：O(1)
 func longestPalindrome1(s string) string { // {{{
 	if s == "" {
 		return ""
@@ -56,6 +58,7 @@ func longestPalindrome2(s string) string {
 	if len(s) < 1 {
 		return ""
 	}
+
 	var start, end int
 	for i := 0; i < len(s); i++ {
 		len1 := expandAroundCenter(s, i, i)   // 一个元素为中心进行扩展

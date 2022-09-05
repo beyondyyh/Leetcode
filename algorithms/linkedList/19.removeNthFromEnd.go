@@ -32,25 +32,17 @@ func removeNthFromEnd1(head *ListNode, n int) *ListNode {
 // 因为要删除该节点，所以要移动到该节点的前一个才能删除，所以循环结束条件为 fast.next != null
 // 时间复杂度：O(n)
 func removeNthFromEnd2(head *ListNode, n int) *ListNode {
-	var dummy *ListNode = &ListNode{Val: 0}
-	dummy.Next = head
+	dummy := &ListNode{Val: -1, Next: head}
 	fast, slow := dummy, dummy
-
 	// fast先走n步
-	for n > 0 {
+	for n > 0 && fast.Next != nil {
 		fast = fast.Next
 		n--
 	}
 
-	// if n > len(head), remove the head
-	if fast == nil {
-		return dummy.Next.Next
-	}
-
 	// fast、slow同时开始移动
 	for fast.Next != nil {
-		fast = fast.Next
-		slow = slow.Next
+		slow, fast = slow.Next, fast.Next
 	}
 	// 此时slow所处位置正好是倒数第n个节点的前一个
 	slow.Next = slow.Next.Next
